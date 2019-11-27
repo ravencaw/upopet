@@ -2,14 +2,11 @@
 
 from odoo import models, fields, api
 
-# class upopet(models.Model):
-#     _name = 'upopet.upopet'
+class tratamiento(models.Model):
+     _name = 'tratamiento.upopet'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+     patologia = fields.Char('Patologia', size = 20, required = True)
+     inicio = fields.Datetime('Inicio', required = True, readonly = False, select = True)
+     fin = fields.Datetime('Fin', required = False, readonly = False, select = True)
+     observaciones = fields.Text()
+
