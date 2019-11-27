@@ -1,7 +1,2 @@
 eclipse.preferences.version=1
-encoding//upopet/__init__.py=utf-8
-encoding//upopet/models/Laboratorio.py=utf-8
-encoding//upopet/models/Mascota.py=utf-8
-encoding//upopet/models/Medicamento.py=utf-8
-encoding//upopet/models/Tratamiento.py=utf-8
-encoding//upopet/models/__init__.py=utf-8
+encoding/__manifest__.py=utf-8
