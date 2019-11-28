@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class tratamiento(models.Model):
-     _name = 'tratamiento.upopet'
+     _name = 'upopet.tratamiento'
 
      patologia = fields.Char('Patologia', size = 20, required = True)
      inicio = fields.Datetime('Inicio', required = True, readonly = False, select = True)
