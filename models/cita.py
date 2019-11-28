@@ -6,7 +6,7 @@ class cita(models.Model):
      _name = 'upopet.cita'
 
      fechaHora = fields.Datetime('Fecha y Hora', required = True)
-     estado = fields.Selectionfields.Selection([('pendiente','Pendiente'),
+     estado = fields.Selection([('pendiente','Pendiente'),
                                      ('presentado','Presentado'),
                                      ('nopresentado','No Presentado'),],
                                      'Estado')
