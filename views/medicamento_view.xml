@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
   <data>
-    <!-- explicit list view definition -->
+      <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="upopet.list">
       <field name="name">upopet list</field>
