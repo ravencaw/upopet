@@ -3,6 +3,9 @@
 from odoo import models, fields, api
 
 class veterinario(models.Model):
+    
+    _inherit = 'upopet.persona'
+    
     _name = 'upopet.veterinario'
 
     numColegiado = fields.Integer('Numero de colegiado', required = True)
