@@ -7,7 +7,7 @@ class cita(models.Model):
 
      fechaHora = fields.Datetime('Fecha y Hora', required = True)
      estado = fields.Selectionfields.Selection([('pendiente','Pendiente'),
-                                     ('presenado','Presentado'),
+                                     ('presentado','Presentado'),
                                      ('nopresentado','No Presentado'),],
                                      'Estado')
 
