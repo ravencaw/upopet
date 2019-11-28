@@ -1,7 +1,6 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
     <record model="ir.ui.view" id="upopet.list">
       <field name="name">upopet list</field>
       <field name="model">upopet.upopet</field>
@@ -13,19 +12,13 @@
         </tree>
       </field>
     </record>
-    -->
 
-    <!-- actions opening views on models -->
-    <!--
     <record model="ir.actions.act_window" id="upopet.action_window">
       <field name="name">upopet window</field>
       <field name="res_model">upopet.upopet</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
 
-    <!-- server action to the one above -->
-    <!--
     <record model="ir.actions.server" id="upopet.action_server">
       <field name="name">upopet server</field>
       <field name="model_id" ref="model_upopet_upopet"/>
@@ -38,23 +31,18 @@
         }
       </field>
     </record>
-    -->
 
-    <!-- Top menu item -->
-    <!--
+    
     <menuitem name="upopet" id="upopet.menu_root"/>
-    -->
-    <!-- menu categories -->
-    <!--
+   
+    
     <menuitem name="Menu 1" id="upopet.menu_1" parent="upopet.menu_root"/>
     <menuitem name="Menu 2" id="upopet.menu_2" parent="upopet.menu_root"/>
-    -->
-    <!-- actions -->
-    <!--
+   
+    
     <menuitem name="List" id="upopet.menu_1_list" parent="upopet.menu_1"
               action="upopet.action_window"/>
     <menuitem name="Server to list" id="upopet" parent="upopet.menu_2"
               action="upopet.action_server"/>
-    -->
   </data>
 </odoo>
