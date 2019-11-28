@@ -12,7 +12,10 @@
              'views/medicamento_view.xml',
              'views/tratamiento_view.xml',
              'views/veterinario_view.xml',
-             'views/persona_view.xml'],
+             'views/persona_view.xml',
+             'views/cita_view.xml',
+             'views/clinica_view.xml',
+             'views/pruebamedica_view.xml'],
     'demo': [ ],
     'application': True,
 }
