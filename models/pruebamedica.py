@@ -9,6 +9,6 @@ class pruebamedica(models.Model):
     tipo = fields.Char('Tipo', size=20, required= True)
     observaciones = fields.Text('Observaciones')
 
-    veterinario_ids = fields.Many2one('upopet.veterinario', string='Veterinario')
-    mascota_ids = fields.Many2one('upopet.mascota', string='Mascota')
-    clinica_ids = fields.Many2one('upopet.clinica', string='Clinica')
+    veterinario_id = fields.Many2one('upopet.veterinario', 'pruebamedica_id', string='Veterinario')
+    mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
+    clinica_id = fields.Many2one('upopet.clinica', string='Clinica')
