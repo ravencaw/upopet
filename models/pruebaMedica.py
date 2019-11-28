@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class laboratorio(models.Model):
+class pruebaMedica(models.Model):
      _name = 'upopet.pruebaMedica'
 
      cif = fields.Char('CIF', size = 9, required = True)

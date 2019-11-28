@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class laboratorio(models.Model):
+class cita(models.Model):
      _name = 'upopet.cita'
 
      cif = fields.Char('CIF', size = 9, required = True)

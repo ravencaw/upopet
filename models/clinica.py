@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class laboratorio(models.Model):
+class clinica(models.Model):
      _name = 'upopet.clinica'
 
      id = fields.Integer('ID', size=9, required=True)
