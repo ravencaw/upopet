@@ -12,4 +12,4 @@ class tratamiento(models.Model):
 
     cita_ids = fields.Many2one('upopet.cita', string='Cita')
     mascota_ids = fields.Many2one('upopet.mascota', string='Mascota')
-    veterinario_ids = fields.Many2one('upopet.veterinario', string='Veterinario')
+    vetelrinario_ids = fields.Many2one('upopet.veterinario', string='Veterinario')

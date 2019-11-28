@@ -1,53 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="upopet.list">
-      <field name="name">upopet list</field>
-      <field name="model">upopet.tratamiento</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
+	<data>
+		<record model="ir.ui.view" id="upopet_tratamiento_form">
+			<field name="name">upopet_tratamiento_form</field>
+			<field name="model">upopet.tratamiento</field>
+			<field name="arch" type="xml">
+				<form string="Tratamientos">
+					<group string="Tratamiento">
+						<group>
+							<field name="patologia" />
+							<field name="inicio" />
+							<field name="fin" />
+							<field name="observaciones" />
+						</group>
+						<group colspan="4">
+							<field name="cita_ids">
+								<tree>
+									<field name="patologia" />
+									<field name="fechaHora" />
+									<field name="estado" />
+								</tree>
+							</field>
+						</group>
+						<group colspan="4">
+							<field name="mascota_ids">
+								<tree>
+									<field name="patologia" />
+								</tree>
+							</field>
+						</group>
+						<group colspan="4">
+							<field name="veterinario_ids">
+								<tree>
+									<field name="numChip" />
+									<field name="nombre" />
+									<field name="especie" />
+									<field name="raza" />
+									<field name="sexo" />
+								</tree>
+							</field>
+						</group>
+					</group>
+				</form>
+			</field>
+		</record>
 
-    
-    <record model="ir.actions.act_window" id="upopet.action_window">
-      <field name="name">upopet window</field>
-      <field name="res_model">upopet.tratamiento</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-   
+		<record model="ir.ui.view" id="upopet_tratamiento_tree_view">
+			<field name="name">view_upopet_tratamiento_tree</field>
+			<field name="model">upopet.tratamiento</field>
+			<field name="arch" type="xml">
+				<tree string="tree_string">
+							<field name="patologia" />
+							<field name="inicio" />
+							<field name="fin" />
+				</tree>
+			</field>
+		</record>
 
-    
-    <record model="ir.actions.server" id="upopet.action_server">
-      <field name="name">upopet server</field>
-      <field name="model_id" ref="model_upopet_upopet"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
-   
 
-    
-    <menuitem name="upopet" id="upopet.menu_root"/>
-   
-    
-    <menuitem name="Menu 1" id="upopet.menu_1" parent="upopet.menu_root"/>
-    <menuitem name="Menu 2" id="upopet.menu_2" parent="upopet.menu_root"/>
-   
-    
-    <menuitem name="List" id="upopet.menu_1_list" parent="upopet.menu_1"
-              action="upopet.action_window"/>
-    <menuitem name="Server to list" id="upopet" parent="upopet.menu_2"
-              action="upopet.action_server"/>
-  </data>
-</odoo>
+		<record id="act_laboratorio" model="ir.actions.act_window">
+			<field name="name">laboratorio</field>
+			<field name="res_model">upopet.laboratorio</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Tratamiento" id="tratamiento_submenu" parent="upopet"
+			sequence="50" />
+		<menuitem name="Ver tratamientos" id="ver_tratamientos_submenu"
+			parent="tratamiento_submenu" sequence="110" action="act_tratamiento" />
+	</data>
+</odoo> 
