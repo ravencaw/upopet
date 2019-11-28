@@ -5,9 +5,12 @@ from odoo import models, fields, api
 class persona(models.Model):
     _name = 'upopet.persona'
 
-    name = fields.Char()
-    value = fields.Integer()
-    value2 = fields.Float(compute="_value_pc", store=True)
-    description = fields.Text()
+    dni = fields.Char('Dni', size = 9, required = True)
+    nombre = fields.Char('Nombre', size = 60, required = True)
+    apellidos = fields.Char('Apellidos', size = 120, required = True)
+    direccion = fields.Char('Direccion', size = 120, required = True)
+    telefono = fields.Integer('Telefono', required = True)
+    fechNac = fields.Date('Fecha de nacimiento', required = True)
+    email = fields.Char('Email', size = 120, required = True)
 
     mascota_ids = fields.One2many('upopet.mascota', string='Mascota')

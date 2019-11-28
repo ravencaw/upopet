@@ -5,10 +5,9 @@ from odoo import models, fields, api
 class veterinario(models.Model):
     _name = 'upopet.veterinario'
 
-    name = fields.Char()
-    value = fields.Integer()
-    value2 = fields.Float(compute="_value_pc", store=True)
-    description = fields.Text()
+    numColegiado = fields.Integer('Numero de colegiado', required = True)
+    especialidad = fields.Char('Especialidad', size = 80, required = True)
+    nomina = fields.Float('Nomina', digits=(4,4))
 
     tratamiento_ids = fields.One2many('upopet.tratamiento', string='Tratamiento')
     cita_ids = fields.One2many('upopet.cita', string='Cita')
