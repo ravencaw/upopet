@@ -8,7 +8,7 @@ class cita(models.Model):
      fechaHora = fields.Datetime('Fecha y Hora', required = True)
      estado = fields.Selection([('pendiente','Pendiente'),
                                      ('presentado','Presentado'),
-                                     ('nopresentado','No Presentado')],
+                                     ('nopresentado','No Presentado'),],
                                      'Estado')
 
      tratamiento_ids = fields.One2many('upopet.tratamiento', 'cita_id', string='Tratamiento')

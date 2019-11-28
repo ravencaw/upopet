@@ -17,7 +17,7 @@ class mascota(models.Model):
     foto_mascota = fields.Binary('Foto')
     
 #
-    cita_ids = fields.One2many('upopet.cita', string='Cita')
-    tratamiento_ids = fields.One2many('upopet.tratamiento', string='Tratamiento')
-    pruebamedica_ids = fields.One2many('upopet.pruebamedica', string='Prueba medica')
-    persona_ids = fields.Many2one('upopet.persona', string='Persona')
+    cita_ids = fields.One2many('upopet.cita', 'mascota_id', string='Cita')
+    tratamiento_ids = fields.One2many('upopet.tratamiento', 'mascota_id', string='Tratamiento')
+    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'mascota_id', string='Prueba medica')
+    persona_id = fields.Many2one('upopet.persona', string='Persona')

@@ -13,6 +13,6 @@ class veterinario(models.Model):
     nomina = fields.Float('Nomina', digits=(4,4))
     foto_veterinario = fields.Binary('Foto')
 
-    tratamiento_ids = fields.One2many('upopet.tratamiento', string='Tratamiento')
-    cita_ids = fields.One2many('upopet.cita', string='Cita')
-    pruebamedica_ids = fields.One2many('upopet.preubamedica', string='Prueba medica')
+    tratamiento_ids = fields.One2many('upopet.tratamiento', 'veterinario_id', string='Tratamiento')
+    cita_ids = fields.One2many('upopet.cita', 'veterinario_id', string='Cita')
+    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'pruebamedica_id', string='Prueba medica')

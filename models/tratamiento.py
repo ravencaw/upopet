@@ -10,7 +10,7 @@ class tratamiento(models.Model):
     fin = fields.Datetime('Fin', required = False, readonly = False, select = True)
     observaciones = fields.Text()
 
-    cita_ids = fields.Many2one('upopet.cita', string='Cita')
-    mascota_ids = fields.Many2one('upopet.mascota', string='Mascota')
-    veterinario_ids = fields.Many2one('upopet.veterinario', string='Veterinario')
+    cita_id = fields.Many2one('upopet.cita', string='Cita')
+    mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
+    veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
     medicamento_ids = fields.Many2many('upopet.medicamento', string='Medicamento')

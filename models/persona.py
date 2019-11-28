@@ -13,4 +13,4 @@ class persona(models.Model):
     fechNac = fields.Date('Fecha de nacimiento', required = True)
     email = fields.Char('Email', size = 120, required = True)
 
-    mascota_ids = fields.One2many('upopet.mascota', string='Mascota')
+    mascota_ids = fields.One2many('upopet.mascota', 'persona_id', string='Mascota')
