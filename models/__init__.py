@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from . import Laboratorio
-from . import Mascota
-from . import Medicamento
-from . import Persona
-from . import Tratamiento
-from . import Veterinario
+from . import laboratorio
+from . import mascota
+from . import medicamento
+from . import persona
+from . import tratamiento
+from . import veterinario
+from . import cita
+from . import clinica
+from . import veterinariopruebaMedica
