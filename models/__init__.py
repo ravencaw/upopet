@@ -8,4 +8,4 @@ from . import tratamiento
 from . import veterinario
 from . import cita
 from . import clinica
-from . import veterinariopruebaMedica
+from . import pruebaMedica
