@@ -11,6 +11,7 @@ class clinica(models.Model):
      direccion = fields.Char('Direccion', size=120, required=True)
      cp = fields.Integer('CodigoPostal', size=5, required=True)
      telefono = fields.Integer('Telefono', size=9, required=True)
+     logo_clinica = fields.Binary('Logo')
 
      pruebamedica_ids = fields.One2many('upopet.pruebamedica', string='Prueba medica')
      cita_ids = fields.One2many('upopet.cita', string='Cita')

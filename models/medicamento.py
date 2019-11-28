@@ -10,6 +10,7 @@ class medicamento(models.Model):
      referencia = fields.Char('Referencia', size = 10, required = True)
      fechaCaducidad = fields.Datetime('Fecha caducidad', required = True, readonly = True, select = True)
      prospecto = fields.Text('Prospecto', required = True)
+     foto_medicamento = fields.Binary('Foto')
 
      tratamiento_ids = fields.Many2many('tratamiento.upopet', string='Tratamiento')  
 

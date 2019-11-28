@@ -14,6 +14,7 @@ class mascota(models.Model):
     peso = fields.Float('Peso', required = True, digits=(4,4))
     tam = fields.Float('Tamaño', required = True, digits=(1,2))
     sexo = fields.Char("Sexo", size = 1, required = True)
+    foto_mascota = fields.Binary('Foto')
     
 #
     cita_ids = fields.One2many('upopet.cita', string='Cita')

@@ -9,5 +9,6 @@ class laboratorio(models.Model):
      nombre = fields.Char('Nombre', size = 70, required = True)
      direccion = fields.Char('Direccion', size = 60, required = True)
      telefono = fields.Char('Telefono', size = 9, required = True)
+     logo_lab = fields.Binary('Logo')
 
      medicamento_ids = fields.Many2many('upopet.medicamento', string='Medicamento')
