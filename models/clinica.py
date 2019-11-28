@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from tools.pycompat import string_types
 
 
 class clinica(models.Model):
@@ -12,4 +13,5 @@ class clinica(models.Model):
      cp = fields.Integer('CodigoPostal', size=5, required=True)
      telefono = fields.Char('Telefono', size=9, required=True)
 
-     medicamento_ids = fields.Many2many('medicamento.upopet', string='Medicamento')
+     pruebamedica_ids = fields.Many2many('upopet.pruebamedica', string='Prueba medica')
+     cita_ids = fields.One2many('upopet.cita', string='Cita')
