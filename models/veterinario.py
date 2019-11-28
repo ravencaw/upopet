@@ -10,6 +10,6 @@ class veterinario(models.Model):
     value2 = fields.Float(compute="_value_pc", store=True)
     description = fields.Text()
 
-    @api.depends('value')
-    def _value_pc(self):
-         self.value2 = float(self.value) / 100
+    tratamiento_ids = fields.One2many('upopet.tratamiento', string='Tratamiento')
+    cita_ids = fields.One2many('upopet.cita', string='Cita')
+    pruebamedica_ids = fields.One2many('upopet.preubamedica', string='Prueba medica')

@@ -12,4 +12,5 @@ encoding//models/persona.py=utf-8
 encoding//models/pruebamedica.py=utf-8
 encoding//models/tratamiento.py=utf-8
 encoding//models/veterinario.py=utf-8
+encoding/__init__.py=utf-8
 encoding/__manifest__.py=utf-8

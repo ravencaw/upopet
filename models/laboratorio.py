@@ -10,4 +10,4 @@ class laboratorio(models.Model):
      direccion = fields.Char('Direccion', size = 60, required = True)
      telefono = fields.Char('Telefono', size = 9, required = True)
 
-     medicamento_ids = fields.Many2many('medicamento.upopet', string='Medicamento')
+     medicamento_ids = fields.Many2many('upopet.medicamento', string='Medicamento')

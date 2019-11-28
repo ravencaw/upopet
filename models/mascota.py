@@ -10,6 +10,7 @@ class mascota(models.Model):
     value2 = fields.Float(compute="_value_pc", store=True)
     description = fields.Text()
 #
-    @api.depends('value')
-    def _value_pc(self):
-        self.value2 = float(self.value) / 100
+    cita_ids = fields.One2many('upopet.cita', string='Cita')
+    tratamiento_ids = fields.One2many('upopet.tratamiento', string='Tratamiento')
+    pruebamedica_ids = fields.One2many('upopet.pruebamedica', string='Prueba medica')
+    persona_ids = fields.Many2one('upopet.persona', string='Persona')

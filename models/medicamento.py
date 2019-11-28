@@ -11,4 +11,4 @@ class medicamento(models.Model):
      fechaCaducidad = fields.Datetime('Fecha caducidad', required = True, readonly = True, select = True)
      prospecto = fields.Text('Prospecto', required = True)
 
-     tratamiento_ids = fields.Many2many('tratamiento.upopet', string='Tratamiento')  
+     tratamiento_ids = fields.Many2many('upopet.tratamiento', string='Tratamiento')  
