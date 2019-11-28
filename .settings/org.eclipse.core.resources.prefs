@@ -1,14 +1,10 @@
 eclipse.preferences.version=1
-<<<<<<< Updated upstream
-encoding//models/__init__.py=utf-8
-=======
->>>>>>> Stashed changes
 encoding//models/cita.py=utf-8
 encoding//models/clinica.py=utf-8
 encoding//models/laboratorio.py=utf-8
 encoding//models/mascota.py=utf-8
 encoding//models/persona.py=utf-8
-encoding//models/pruebaMedica.py=utf-8
+encoding//models/pruebamedica.py=utf-8
 encoding//models/tratamiento.py=utf-8
 encoding//models/veterinario.py=utf-8
 encoding/__manifest__.py=utf-8

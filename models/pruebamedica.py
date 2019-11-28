@@ -2,8 +2,8 @@
 
 from odoo import models, fields, api
 
-class pruebaMedica(models.Model):
-     _name = 'upopet.pruebaMedica'
+class pruebamedica(models.Model):
+     _name = 'upopet.pruebamedica'
 
      cif = fields.Char('CIF', size = 9, required = True)
      nombre = fields.Char('Nombre', size = 70, required = True)
