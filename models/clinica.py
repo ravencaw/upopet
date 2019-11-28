@@ -9,9 +9,9 @@ class clinica(models.Model):
 
      id = fields.Integer('ID', size=9, required=True)
      nombre = fields.Char('Nombre', size=70, required=True)
-     direccion = fields.Char('Direccion', size=60, required=True)
+     direccion = fields.Char('Direccion', size=120, required=True)
      cp = fields.Integer('CodigoPostal', size=5, required=True)
-     telefono = fields.Char('Telefono', size=9, required=True)
+     telefono = fields.Integer('Telefono', size=9, required=True)
 
-     pruebamedica_ids = fields.Many2many('upopet.pruebamedica', string='Prueba medica')
+     pruebamedica_ids = fields.One2many('upopet.pruebamedica', string='Prueba medica')
      cita_ids = fields.One2many('upopet.cita', string='Cita')

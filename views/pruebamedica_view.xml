@@ -3,7 +3,7 @@
     
     <record model="ir.ui.view" id="upopet.list">
       <field name="name">upopet list</field>
-      <field name="model">upopet.pruebaMedica</field>
+      <field name="model">upopet.pruebamedica</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,7 +17,7 @@
     
     <record model="ir.actions.act_window" id="upopet.action_window">
       <field name="name">upopet window</field>
-      <field name="res_model">upopet.pruebaMedica</field>
+      <field name="res_model">upopet.pruebamedica</field>
       <field name="view_mode">tree,form</field>
     </record>
    
