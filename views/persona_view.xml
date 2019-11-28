@@ -3,7 +3,7 @@
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="upopet.list">
       <field name="name">upopet list</field>
-      <field name="model">upopet.upopet</field>
+      <field name="model">upopet.persona</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -16,7 +16,7 @@
     
     <record model="ir.actions.act_window" id="upopet.action_window">
       <field name="name">upopet window</field>
-      <field name="res_model">upopet.upopet</field>
+      <field name="res_model">upopet.persona</field>
       <field name="view_mode">tree,form</field>
     </record>
    
