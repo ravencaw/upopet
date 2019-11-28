@@ -2,8 +2,8 @@
 
 from odoo import models, fields, api
 
-class Veterinario(models.Model):
-    _name = 'upopet.veterinario'
+class persona(models.Model):
+    _name = 'upopet.persona'
 
     name = fields.Char()
     value = fields.Integer()
@@ -12,4 +12,4 @@ class Veterinario(models.Model):
 
     @api.depends('value')
     def _value_pc(self):
-         self.value2 = float(self.value) / 100
+        self.value2 = float(self.value) / 100
