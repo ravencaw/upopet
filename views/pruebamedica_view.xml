@@ -8,11 +8,13 @@
 				<form string="pruebamedicas">
 					<group string="pruebamedica">
 						<group>
-							<field name="fechaHora" />
-							<field name="tipo" />
 							<field name="veterinario_id" />
 							<field name="mascota_id" />
 							<field name="clinica_id" />
+						</group>
+						<group>
+							<field name="fechaHora" />
+							<field name="tipo" />
 						</group>
 					</group>
 				</form>

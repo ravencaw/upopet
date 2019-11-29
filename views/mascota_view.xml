@@ -10,10 +10,7 @@
 						<group>
 							<field name="numChip" />
 							<field name="nombre" />
-							<field name="especie" />
-							<field name="raza" />
 							<field name="edad" />
-							<field name="color" />
 							<field name="peso" />
 							<field name="tam" />
 							<field name="sexo" />
@@ -22,10 +19,9 @@
 						<group>
 							<field name="foto_mascota" nolabel="1" widget="image"
 								class="oe_avatar" />
-						</group>
-												<group>
-							<field name="foto_mascota" nolabel="1" widget="image"
-								class="oe_avatar" />
+							<field name="especie" />
+							<field name="raza" />
+							<field name="color" /> 
 						</group>
 						<group colspan="4">
 							<field name="cita_ids">
@@ -54,7 +50,6 @@
 								</tree>
 							</field>
 						</group>
-
 					</group>
 				</form>
 			</field>
