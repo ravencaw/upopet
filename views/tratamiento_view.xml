@@ -43,9 +43,9 @@
 		</record>
 
 
-		<record id="act_laboratorio" model="ir.actions.act_window">
+		<record id="act_tratamiento" model="ir.actions.act_window">
 			<field name="name">tratamiento</field>
-			<field name="res_model">upopet.laboratorio</field>
+			<field name="res_model">upopet.tratamiento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Tratamiento" id="tratamiento_submenu" parent="upopet"

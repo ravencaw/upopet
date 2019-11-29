@@ -24,6 +24,15 @@
 								</tree>
 							</field>
 						</group>
+						<group colspan="4">
+							<field name="laboratorio_ids">
+								<tree>
+									<field name="nombre" />
+									<field name="direccion" />
+									<field name="telefono" />
+								</tree>
+							</field>
+						</group>
 					</group>
 				</form>
 			</field>
@@ -47,7 +56,7 @@
 			<field name="res_model">upopet.medicamento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Medicamentos" id="medicamentos_submenu" parent="upopet"
+		<menuitem name="Medicamentos" id="medicamento_submenu" parent="upopet"
 			sequence="50" />
 		<menuitem name="Ver medicamentos" id="ver_medicamentos_submenu"
 			parent="medicamento_submenu" sequence="110" action="act_medicamento" />

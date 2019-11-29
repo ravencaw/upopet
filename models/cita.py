@@ -14,3 +14,4 @@ class cita(models.Model):
      tratamiento_ids = fields.One2many('upopet.tratamiento', 'cita_id', string='Tratamiento')
      mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
      clinica_id = fields.Many2one('upopet.clinica', string='Clinica')
+     veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')

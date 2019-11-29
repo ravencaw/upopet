@@ -12,6 +12,7 @@ class medicamento(models.Model):
      prospecto = fields.Text('Prospecto', required = True)
      foto_medicamento = fields.Binary('Foto')
 
-     tratamiento_ids = fields.Many2many('tratamiento.upopet', string='Tratamiento')  
+     tratamiento_ids = fields.Many2many('upopet.tratamiento', string='Tratamiento') 
+     laboratorio_ids = fields.Many2many('upopet.laboratorio', string='Laboratorio') 
 
      

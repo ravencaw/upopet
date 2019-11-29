@@ -12,6 +12,7 @@
 							<field name="estado" />
 							<field name="mascota_id" />
 							<field name="clinica_id" />
+							<field name="veterinario_id" />
 						</group>
 						<group colspan="3">
 							<field name="tratamiento_ids">
