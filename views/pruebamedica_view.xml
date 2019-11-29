@@ -32,7 +32,7 @@
 
 
 		<record id="act_pruebamedica" model="ir.actions.act_window">
-			<field name="name">Pruebas medicas</field>
+			<field name="name">pruebamedica</field>
 			<field name="res_model">upopet.pruebamedica</field>
 			<field name="view_mode">tree,form</field>
 		</record>

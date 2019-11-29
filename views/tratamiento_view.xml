@@ -44,7 +44,7 @@
 
 
 		<record id="act_laboratorio" model="ir.actions.act_window">
-			<field name="name">laboratorio</field>
+			<field name="name">tratamiento</field>
 			<field name="res_model">upopet.laboratorio</field>
 			<field name="view_mode">tree,form</field>
 		</record>
