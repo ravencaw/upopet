@@ -15,4 +15,4 @@ class veterinario(models.Model):
 
     tratamiento_ids = fields.One2many('upopet.tratamiento', 'veterinario_id', string='Tratamiento')
     cita_ids = fields.One2many('upopet.cita', 'veterinario_id', string='Cita')
-    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'pruebamedica_id', string='Prueba medica')
+    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'veterinario_id', string='Prueba medica')

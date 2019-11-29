@@ -10,37 +10,9 @@
 						<group>
 							<field name="fechaHora" />
 							<field name="tipo" />
-						</group>
-						<group colspan="3">
-							<field name="veterinario_ids">
-								<tree>
-									<field name="nombre" />
-									<field name="especialidad" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="3">
-							<field name="mascota_ids">
-								<tree>
-									<field name="nombre" />
-									<field name="especie" />
-									<field name="raza" />
-									<field name="edad" />
-									<field name="peso" />
-									<field name="tam" />
-									<field name="sexo" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="3">
-							<field name="clinica_ids">
-								<tree>
-									<field name="nombre" />
-									<field name="direccion" />
-									<field name="cp" />
-									<field name="telefono" />
-								</tree>
-							</field>
+							<field name="veterinario_id" />
+							<field name="mascota_id" />
+							<field name="clinica_id" />
 						</group>
 					</group>
 				</form>

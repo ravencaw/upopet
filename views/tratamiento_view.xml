@@ -12,31 +12,16 @@
 							<field name="inicio" />
 							<field name="fin" />
 							<field name="observaciones" />
+							<field name="cita_id" />
+							<field name="mascota_id" />
+							<field name="veterinario_id" />
 						</group>
 						<group colspan="4">
-							<field name="cita_ids">
+							<field name="medicamento_ids">
 								<tree>
-									<field name="patologia" />
-									<field name="fechaHora" />
-									<field name="estado" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="4">
-							<field name="mascota_ids">
-								<tree>
-									<field name="patologia" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="4">
-							<field name="veterinario_ids">
-								<tree>
-									<field name="numChip" />
 									<field name="nombre" />
-									<field name="especie" />
-									<field name="raza" />
-									<field name="sexo" />
+									<field name="referencia" />
+									<field name="fechaCaducidad" />
 								</tree>
 							</field>
 						</group>

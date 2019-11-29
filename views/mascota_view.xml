@@ -17,6 +17,7 @@
 							<field name="peso" />
 							<field name="tam" />
 							<field name="sexo" />
+							<field name="persona_id" />
 						</group>
 						<group>
 							<field name="foto_mascota" nolabel="1" widget="image"
@@ -49,15 +50,7 @@
 								</tree>
 							</field>
 						</group>
-						<group colspan="4">
-							<field name="persona_ids">
-								<tree>
-									<field name="dni" />
-									<field name="nombre" />
-									<field name="apellidos" />
-								</tree>
-							</field>
-						</group>
+						
 					</group>
 				</form>
 			</field>

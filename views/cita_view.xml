@@ -10,6 +10,8 @@
 						<group>
 							<field name="fechaHora" />
 							<field name="estado" />
+							<field name="mascota_id" />
+							<field name="clinica_id" />
 						</group>
 						<group colspan="3">
 							<field name="tratamiento_ids">
@@ -20,25 +22,7 @@
 								</tree>
 							</field>
 						</group>
-						<group colspan="3">
-							<field name="mascota_ids">
-								<tree>
-									<field name="nombre" />
-									<field name="raza" />
-									<field name="especie" />
-									<field name="sexo" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="3">
-							<field name="clinica_ids">
-								<tree>
-									<field name="nombre" />
-									<field name="direccion" />
-									<field name="telefono" />
-								</tree>
-							</field>
-						</group>
+						
 					</group>
 				</form>
 			</field>
