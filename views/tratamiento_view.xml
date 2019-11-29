@@ -12,6 +12,8 @@
 							<field name="inicio" />
 							<field name="fin" />
 							<field name="observaciones" />
+						</group>
+						<group>
 							<field name="cita_id" />
 							<field name="mascota_id" />
 							<field name="veterinario_id" />

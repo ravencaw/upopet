@@ -54,7 +54,7 @@
 			<field name="res_model">upopet.persona</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="personas" id="persona_submenu" parent="upopet"
+		<menuitem name="Personas" id="persona_submenu" parent="upopet"
 			sequence="50" />
 		<menuitem name="Ver personas" id="ver_personas_submenu"
 			parent="persona_submenu" sequence="110" action="act_persona" />

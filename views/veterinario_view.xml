@@ -64,7 +64,7 @@
 			<field name="res_model">upopet.veterinario</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="veterinarios" id="veterinario_submenu" parent="upopet"
+		<menuitem name="Veterinarios" id="veterinario_submenu" parent="upopet"
 			sequence="50" />
 		<menuitem name="Ver veterinarios" id="ver_veterinarios_submenu"
 			parent="veterinario_submenu" sequence="110" action="act_veterinario" />

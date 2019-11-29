@@ -8,11 +8,13 @@
 				<form string="citas">
 					<group string="cita">
 						<group>
+							<field name="mascota_id" />
+							<field name="veterinario_id" />
+							<field name="clinica_id" />
+						</group>
+						<group>
 							<field name="fechaHora" />
 							<field name="estado" />
-							<field name="mascota_id" />
-							<field name="clinica_id" />
-							<field name="veterinario_id" />
 						</group>
 						<group colspan="3">
 							<field name="tratamiento_ids">
@@ -46,7 +48,7 @@
 			<field name="res_model">upopet.cita</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="citas" id="cita_submenu" parent="upopet"
+		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />
 		<menuitem name="Ver citas" id="ver_citas_submenu"
 			parent="cita_submenu" sequence="110" action="act_cita" />

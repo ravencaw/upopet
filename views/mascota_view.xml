@@ -23,6 +23,10 @@
 							<field name="foto_mascota" nolabel="1" widget="image"
 								class="oe_avatar" />
 						</group>
+												<group>
+							<field name="foto_mascota" nolabel="1" widget="image"
+								class="oe_avatar" />
+						</group>
 						<group colspan="4">
 							<field name="cita_ids">
 								<tree>
@@ -81,7 +85,7 @@
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
-		<menuitem name="mascotas" id="mascota_submenu"
+		<menuitem name="Mascotas" id="mascota_submenu"
 			parent="upopet" sequence="50" />
 		<menuitem name="Ver mascotas" id="ver_mascotas_submenu"
 			parent="mascota_submenu" sequence="110" action="act_mascota" />
