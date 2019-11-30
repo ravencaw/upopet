@@ -22,7 +22,7 @@
 						<notebook colspan="4">
 						<page string="Tratamientos">
 						<group colspan="4">
-							<field name="tratamiento_ids">
+							<field name="tratamiento_ids" nolabel="1">
 								<tree>
 									<field name="patologia" />
 								</tree>
@@ -31,7 +31,7 @@
 						</page>
 						<page string="Laboratorios">
 						<group colspan="4">
-							<field name="laboratorio_ids">
+							<field name="laboratorio_ids" nolabel="1">
 								<tree>
 									<field name="nombre" />
 									<field name="direccion" />
