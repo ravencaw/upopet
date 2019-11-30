@@ -37,7 +37,7 @@
 						<group colspan="4">
 							<field name="pruebamedica_ids">
 								<tree>
-									<field name="fechaHora" />
+									<field name="fechaHoraP" />
 									<field name="tipo" />
 								</tree>
 							</field>

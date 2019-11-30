@@ -14,7 +14,7 @@
 							<field name="clinica_id" />
 						</group>
 						<group>
-							<field name="fechaHora" />
+							<field name="fechaHoraP" />
 							<field name="tipo" />
 						</group>
 					</group>
@@ -28,7 +28,7 @@
 			<field name="model">upopet.pruebamedica</field>
 			<field name="arch" type="xml">
 				<tree string="tree_string">
-					<field name="fechaHora" />
+					<field name="fechaHoraP" />
 					<field name="tipo" />
 				</tree>
 			</field>

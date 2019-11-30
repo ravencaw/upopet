@@ -50,7 +50,7 @@
 							<group>
 								<field name="pruebamedica_ids" nolabel="1">
 									<tree>
-										<field name="fechaHora" />
+										<field name="fechaHoraP" />
 										<field name="tipo" />
 									</tree>
 								</field>
@@ -81,23 +81,22 @@
 			</field>
 		</record>
 		
-		<record id="view_calendar_upopet_mascota" model="ir.ui.view">
-		    <field name="name">view_calendar_upopet_mascota</field>
-		    <field name="model">upopet.mascota</field>
-		    <field name="arch" type="xml">
-			    <field name="cita_ids" nolabel="1">
-			        <calendar date_start="fechaHora" color="estado" display="[estado]">
-			            <!-- Fields used for the text of display attribute -->
-						<field name="estado" />
-			        </calendar>
-			    </field>
-		    </field>
-		</record>
-
+		<!-- Calendar View -->
+<!-- 		<record model="ir.ui.view" id="upopet_cita_calendar_view"> -->
+<!-- 			<field name="name">upopet_cita_calendar_viewr</field> -->
+<!-- 			<field name="model">upopet.cita</field> -->
+<!-- 			<field name="type">calendar</field> -->
+<!-- 			<field name="arch" type="xml"> -->
+<!-- 				<calendar string="Citas" color="veterinario_id" -->
+<!-- 					date_start="fechaHora"  mode="month"> -->
+<!-- 					<field name="estado" /> -->
+<!-- 				</calendar> -->
+<!-- 			</field> -->
+<!-- 		</record> -->
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">mascota</field>
 			<field name="res_model">upopet.mascota</field>
-			<field name="view_mode">tree,form,calendar</field>
+			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
 		<menuitem name="Mascotas" id="mascota_submenu"
