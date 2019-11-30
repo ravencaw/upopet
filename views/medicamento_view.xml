@@ -11,6 +11,7 @@
 						<group>
 							<field name="nombre" />
 							<field name="referencia" />
+							<field name="precio" />
 							<field name="fechaCaducidad" />
 							<field name="prospecto" />
 						</group>
@@ -46,6 +47,7 @@
 			<field name="arch" type="xml">
 				<tree string="tree_string">
 					<field name="nombre" />
+					<field name="precio" />
 					<field name="referencia" />
 					<field name="fechaCaducidad" />
 				</tree>

@@ -24,6 +24,7 @@
 								<tree>
 									<field name="nombre" />
 									<field name="referencia" />
+									<field name="precio" />
 									<field name="fechaCaducidad" />
 								</tree>
 							</field>
