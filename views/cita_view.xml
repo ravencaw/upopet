@@ -43,12 +43,27 @@
 				</tree>
 			</field>
 		</record>
+		<!-- Calendar View -->
+		<record model="ir.ui.view" id="upopet_cita_calendar_view">
+			<field name="name">upopet_cita_calendar_viewr</field>
+			<field name="model">upopet.cita</field>
+			<field name="type">calendar</field>
+			<field name="arch" type="xml">
+				<calendar string="Citas" color="veterinario_id"
+					date_start="fechaHora"  mode="month">
+					<field name="mascota_id" />
+					<field name="veterinario_id" />
+					<field name="fechaHora" />
+					<field name="estado" />
+				</calendar>
+			</field>
+		</record>
 
 
 		<record id="act_cita" model="ir.actions.act_window">
 			<field name="name">cita</field>
 			<field name="res_model">upopet.cita</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,calendar</field>
 		</record>
 		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />
