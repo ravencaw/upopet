@@ -18,6 +18,8 @@
 							<field name="foto_medicamento" nolabel="1" widget="image"
 								class="oe_avatar" />
 						</group>
+						<notebook colspan="4">
+						<page string="Tratamientos">
 						<group colspan="4">
 							<field name="tratamiento_ids">
 								<tree>
@@ -25,6 +27,8 @@
 								</tree>
 							</field>
 						</group>
+						</page>
+						<page string="Laboratorios">
 						<group colspan="4">
 							<field name="laboratorio_ids">
 								<tree>
@@ -34,6 +38,8 @@
 								</tree>
 							</field>
 						</group>
+						</page>
+						</notebook>
 					</group>
 				</form>
 			</field>

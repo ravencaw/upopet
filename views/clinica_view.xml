@@ -18,20 +18,28 @@
 							<field name="logo_clinica" nolabel="1" widget="image"
 								class="oe_avatar" />
 						</group>
+						<notebook colspan="4">
+						<page string="Pruebas medicas">
 						<group colspan="4">
-							<field name="pruebamedica_ids">
+							<field name="pruebamedica_ids" nolabel="1">
 								<tree>
 									<field name="fechaHora" />
 									<field name="tipo" />
 								</tree>
 							</field>
-							<field name="cita_ids">
+						</group>
+						</page>
+						<page string="Citas">
+						<group>
+							<field name="cita_ids" nolabel="1">
 								<tree>
 									<field name="fechaHora" />
 									<field name="estado" />
 								</tree>
 							</field>
 						</group>
+						</page>
+						</notebook>
 					</group>
 				</form>
 			</field>
