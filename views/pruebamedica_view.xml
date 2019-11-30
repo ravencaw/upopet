@@ -16,6 +16,7 @@
 						<group>
 							<field name="fechaHoraP" />
 							<field name="tipo" />
+							<field name="observaciones" />
 						</group>
 					</group>
 				</form>

@@ -6,7 +6,7 @@ class pruebamedica(models.Model):
     _name = 'upopet.pruebamedica'
 
     fechaHoraP = fields.Datetime('Fecha y Hora', required = True)
-    tipo = fields.Char('Tipo', size=20, required= True)
+    tipo = fields.Char('Tipo', size=20, required = True)
     observaciones = fields.Text('Observaciones')
 
     veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
