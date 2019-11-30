@@ -8,7 +8,7 @@ class medicamento(models.Model):
 
      nombre = fields.Char('Nombre', size = 8, required = True)
      referencia = fields.Char('Referencia', size = 10, required = True)
-     fechaCaducidad = fields.Datetime('Fecha caducidad', required = True, readonly = True, select = True)
+     fechaCaducidad = fields.Datetime('Fecha caducidad', required = True)
      prospecto = fields.Text('Prospecto', required = True)
      foto_medicamento = fields.Binary('Foto')
 

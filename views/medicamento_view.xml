@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
+		<!-- Vista Form -->
 		<record model="ir.ui.view" id="upopet_medicamento_form">
 			<field name="name">upopet_medicamento_form</field>
 			<field name="model">upopet.medicamento</field>
@@ -38,23 +39,36 @@
 			</field>
 		</record>
 
+		<!-- Vista Tree -->
 		<record model="ir.ui.view" id="upopet_medicamento_tree_view">
 			<field name="name">view_upopet_medicamento_tree</field>
 			<field name="model">upopet.medicamento</field>
 			<field name="arch" type="xml">
 				<tree string="tree_string">
-							<field name="nombre" />
-							<field name="referencia" />
-							<field name="fechaCaducidad" />
+					<field name="nombre" />
+					<field name="referencia" />
+					<field name="fechaCaducidad" />
 				</tree>
 			</field>
 		</record>
 
+		<!-- Vista Graph -->
+		<record model="ir.ui.view" id="upopet_medicamento_graph">
+			<field name="name">view_upopet_medicamento_graph</field>
+			<field name="model">upopet.medicamento</field>
+			<field name="type">graph</field>
+			<field name="arch" type="xml">
+				<graph string="Medicamentos más vendidos" type="bar">
+					<field name="nombre" type="row" />
+					<field name="referencia" type="measure" />
+				</graph>
+			</field>
+		</record>
 
 		<record id="act_medicamento" model="ir.actions.act_window">
 			<field name="name">medicamento</field>
 			<field name="res_model">upopet.medicamento</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,graph</field>
 		</record>
 		<menuitem name="Medicamentos" id="medicamento_submenu" parent="upopet"
 			sequence="50" />

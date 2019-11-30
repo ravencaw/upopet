@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
+		<!-- Vista Form -->
 		<record model="ir.ui.view" id="upopet_tratamiento_form">
 			<field name="name">upopet_tratamiento_form</field>
 			<field name="model">upopet.tratamiento</field>
@@ -32,6 +33,7 @@
 			</field>
 		</record>
 
+		<!-- Vista Tree -->
 		<record model="ir.ui.view" id="upopet_tratamiento_tree_view">
 			<field name="name">view_upopet_tratamiento_tree</field>
 			<field name="model">upopet.tratamiento</field>
