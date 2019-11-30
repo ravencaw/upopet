@@ -10,16 +10,16 @@
 					<group string="Mascota">
 						<group colspan="1">
 							<field name="numChip" />
-							<field name="persona_id" />
 							<field name="nombre" />
 							<field name="edad" />
 							<field name="peso" />
 							<field name="tam" />
+							<field name="sexo" />
 						</group>
 						<group colspan="1">
 							<field name="foto_mascota" nolabel="1" widget="image"
 								class="oe_avatar" />
-							<field name="sexo" />
+							<field name="persona_id" />
 							<field name="especie" />
 							<field name="raza" />
 							<field name="color" /> 
@@ -27,15 +27,12 @@
 						<notebook colspan="4">
 						<page string="Citas">
 							<group>
-							<record model="ir.ui.view" id="view_gym_gymclass_calendar">
-								<field name="cita_ids" type="xml">
-									<calendar string="Citas" color="estado" date_start="fechaHora" date_stop="fechaHora" mode="month">
-										<field name="veterinario_id" />
-										<field name="clinica_id" />
-										<field name="estado"/>
-									</calendar>
+								<field name="cita_ids" nolabel="1">
+									<tree>
+										<field name="fechaHora" />
+										<field name="estado" />
+									</tree>
 								</field>
-								</record>
 							</group>
 						</page>
 						<page string="Tratamientos">
@@ -53,7 +50,6 @@
 							<group>
 								<field name="pruebamedica_ids" nolabel="1">
 									<tree>
-										<field name="id" />
 										<field name="fechaHora" />
 										<field name="tipo" />
 									</tree>
@@ -84,7 +80,19 @@
 				</tree>
 			</field>
 		</record>
-
+		
+		<record id="view_calendar_upopet_mascota" model="ir.ui.view">
+		    <field name="name">view_calendar_upopet_mascota</field>
+		    <field name="model">upopet.mascota</field>
+		    <field name="arch" type="xml">
+			    <field name="cita_ids" nolabel="1">
+			        <calendar date_start="fechaHora" color="estado" display="[estado]">
+			            <!-- Fields used for the text of display attribute -->
+						<field name="estado" />
+			        </calendar>
+			    </field>
+		    </field>
+		</record>
 
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">mascota</field>
