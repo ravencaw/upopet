@@ -26,7 +26,7 @@
 								</tree>
 							</field>
 						</group>
-						
+
 					</group>
 				</form>
 			</field>
@@ -43,14 +43,14 @@
 				</tree>
 			</field>
 		</record>
-		<!-- Calendar View -->
+		<!-- Vista Calendar -->
 		<record model="ir.ui.view" id="upopet_cita_calendar_view">
 			<field name="name">upopet_cita_calendar_viewr</field>
 			<field name="model">upopet.cita</field>
 			<field name="type">calendar</field>
 			<field name="arch" type="xml">
 				<calendar string="Citas" color="veterinario_id"
-					date_start="fechaHora"  mode="month">
+					date_start="fechaHora" mode="month">
 					<field name="mascota_id" />
 					<field name="veterinario_id" />
 					<field name="fechaHora" />

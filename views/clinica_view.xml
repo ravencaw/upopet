@@ -19,26 +19,26 @@
 								class="oe_avatar" />
 						</group>
 						<notebook colspan="4">
-						<page string="Pruebas medicas">
-						<group colspan="4">
-							<field name="pruebamedica_ids" nolabel="1">
-								<tree>
-									<field name="fechaHoraP" />
-									<field name="tipo" />
-								</tree>
-							</field>
-						</group>
-						</page>
-						<page string="Citas">
-						<group>
-							<field name="cita_ids" nolabel="1">
-								<tree>
-									<field name="fechaHora" />
-									<field name="estado" />
-								</tree>
-							</field>
-						</group>
-						</page>
+							<page string="Pruebas medicas">
+								<group colspan="4">
+									<field name="pruebamedica_ids" nolabel="1">
+										<tree>
+											<field name="fechaHoraP" />
+											<field name="tipo" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Citas">
+								<group>
+									<field name="cita_ids" nolabel="1">
+										<tree>
+											<field name="fechaHora" />
+											<field name="estado" />
+										</tree>
+									</field>
+								</group>
+							</page>
 						</notebook>
 					</group>
 				</form>
@@ -65,8 +65,8 @@
 			<field name="res_model">upopet.clinica</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Clinicas" id="clinica_submenu" parent="upopet"
-			sequence="50" />
+		<menuitem name="Clinicas" id="clinica_submenu"
+			parent="upopet" sequence="50" />
 		<menuitem name="Ver clinicas" id="ver_clinicas_submenu"
 			parent="clinica_submenu" sequence="110" action="act_clinica" />
 	</data>

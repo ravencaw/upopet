@@ -40,12 +40,12 @@
 			<field name="arch" type="xml">
 				<tree string="tree_string">
 					<field name="dni" />
-						<field name="nombre" />
-						<field name="apellidos" />
-						<field name="direccion" />
-						<field name="telefono" />
-						<field name="fechNac" />
-						<field name="email" />
+					<field name="nombre" />
+					<field name="apellidos" />
+					<field name="direccion" />
+					<field name="telefono" />
+					<field name="fechNac" />
+					<field name="email" />
 				</tree>
 			</field>
 		</record>
@@ -56,8 +56,8 @@
 			<field name="res_model">upopet.persona</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Personas" id="persona_submenu" parent="upopet"
-			sequence="50" />
+		<menuitem name="Personas" id="persona_submenu"
+			parent="upopet" sequence="50" />
 		<menuitem name="Ver personas" id="ver_personas_submenu"
 			parent="persona_submenu" sequence="110" action="act_persona" />
 	</data>

@@ -41,9 +41,10 @@
 			<field name="res_model">upopet.pruebamedica</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Pruebas medicas" id="pruebamedica_submenu" parent="upopet"
-			sequence="50" />
-		<menuitem name="Ver pruebas medicas" id="ver_pruebamedicas_submenu"
-			parent="pruebamedica_submenu" sequence="110" action="act_pruebamedica" />
+		<menuitem name="Pruebas medicas" id="pruebamedica_submenu"
+			parent="upopet" sequence="50" />
+		<menuitem name="Ver pruebas medicas"
+			id="ver_pruebamedicas_submenu" parent="pruebamedica_submenu"
+			sequence="110" action="act_pruebamedica" />
 	</data>
 </odoo> 

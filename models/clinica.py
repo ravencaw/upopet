@@ -12,5 +12,5 @@ class clinica(models.Model):
      telefono = fields.Integer('Telefono', size=9, required=True)
      logo_clinica = fields.Binary('Logo')
 
-     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'clinica_id',  string='Prueba medica')
+     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'clinica_id', string='Prueba medica')
      cita_ids = fields.One2many('upopet.cita', 'clinica_id', string='Cita')
