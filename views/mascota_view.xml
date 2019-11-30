@@ -8,18 +8,18 @@
 			<field name="arch" type="xml">
 				<form string="Mascotas">
 					<group string="Mascota">
-						<group>
+						<group colspan="1">
 							<field name="numChip" />
+							<field name="persona_id" />
 							<field name="nombre" />
 							<field name="edad" />
 							<field name="peso" />
 							<field name="tam" />
-							<field name="sexo" />
-							<field name="persona_id" />
 						</group>
-						<group>
+						<group colspan="1">
 							<field name="foto_mascota" nolabel="1" widget="image"
 								class="oe_avatar" />
+							<field name="sexo" />
 							<field name="especie" />
 							<field name="raza" />
 							<field name="color" /> 
@@ -27,13 +27,15 @@
 						<notebook colspan="4">
 						<page string="Citas">
 							<group>
-								<field name="cita_ids" nolabel="1">
-									<tree>
-										<field name="id" />
-										<field name="fechaHora" />
-										<field name="estado" />
-									</tree>
+							<record model="ir.ui.view" id="view_gym_gymclass_calendar">
+								<field name="cita_ids" type="xml">
+									<calendar string="Citas" color="estado" date_start="fechaHora" date_stop="fechaHora" mode="month">
+										<field name="veterinario_id" />
+										<field name="clinica_id" />
+										<field name="estado"/>
+									</calendar>
 								</field>
+								</record>
 							</group>
 						</page>
 						<page string="Tratamientos">
@@ -87,7 +89,7 @@
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">mascota</field>
 			<field name="res_model">upopet.mascota</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,calendar</field>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
 		<menuitem name="Mascotas" id="mascota_submenu"
