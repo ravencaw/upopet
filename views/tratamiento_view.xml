@@ -40,9 +40,9 @@
 			<field name="model">upopet.tratamiento</field>
 			<field name="arch" type="xml">
 				<tree string="tree_string">
-							<field name="patologia" />
-							<field name="inicio" />
-							<field name="fin" />
+					<field name="patologia" />
+					<field name="inicio" />
+					<field name="fin" />
 				</tree>
 			</field>
 		</record>
@@ -53,9 +53,10 @@
 			<field name="res_model">upopet.tratamiento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Tratamiento" id="tratamiento_submenu" parent="upopet"
-			sequence="50" />
-		<menuitem name="Ver tratamientos" id="ver_tratamientos_submenu"
-			parent="tratamiento_submenu" sequence="110" action="act_tratamiento" />
+		<menuitem name="Tratamiento" id="tratamiento_submenu"
+			parent="upopet" sequence="50" />
+		<menuitem name="Ver tratamientos"
+			id="ver_tratamientos_submenu" parent="tratamiento_submenu"
+			sequence="110" action="act_tratamiento" />
 	</data>
 </odoo> 
