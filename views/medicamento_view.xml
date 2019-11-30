@@ -70,9 +70,10 @@
 			<field name="res_model">upopet.medicamento</field>
 			<field name="view_mode">tree,form,graph</field>
 		</record>
-		<menuitem name="Medicamentos" id="medicamento_submenu" parent="upopet"
-			sequence="50" />
-		<menuitem name="Ver medicamentos" id="ver_medicamentos_submenu"
-			parent="medicamento_submenu" sequence="110" action="act_medicamento" />
+		<menuitem name="Medicamentos" id="medicamento_submenu"
+			parent="upopet" sequence="50" />
+		<menuitem name="Ver medicamentos"
+			id="ver_medicamentos_submenu" parent="medicamento_submenu"
+			sequence="110" action="act_medicamento" />
 	</data>
 </odoo> 
