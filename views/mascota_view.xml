@@ -24,33 +24,41 @@
 							<field name="raza" />
 							<field name="color" /> 
 						</group>
-						<group colspan="4">
-							<field name="cita_ids">
-								<tree>
-									<field name="id" />
-									<field name="fechaHora" />
-									<field name="estado" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="4">
-							<field name="tratamiento_ids">
-								<tree>
-									<field name="patologia" />
-									<field name="inicio" />
-									<field name="fin" />
-								</tree>
-							</field>
-						</group>
-						<group colspan="4">
-							<field name="pruebamedica_ids">
-								<tree>
-									<field name="id" />
-									<field name="fechaHora" />
-									<field name="tipo" />
-								</tree>
-							</field>
-						</group>
+						<notebook colspan="4">
+						<page string="Citas">
+							<group>
+								<field name="cita_ids" nolabel="1">
+									<tree>
+										<field name="id" />
+										<field name="fechaHora" />
+										<field name="estado" />
+									</tree>
+								</field>
+							</group>
+						</page>
+						<page string="Tratamientos">
+							<group>
+								<field name="tratamiento_ids" nolabel="1">
+									<tree>
+										<field name="patologia" />
+										<field name="inicio" />
+										<field name="fin" />
+									</tree>
+								</field>
+							</group>
+						</page>
+						<page string="Pruebas medicas"> 
+							<group>
+								<field name="pruebamedica_ids" nolabel="1">
+									<tree>
+										<field name="id" />
+										<field name="fechaHora" />
+										<field name="tipo" />
+									</tree>
+								</field>
+							</group>
+						</page>
+						</notebook>
 					</group>
 				</form>
 			</field>

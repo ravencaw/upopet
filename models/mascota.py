@@ -13,7 +13,9 @@ class mascota(models.Model):
     color = fields.Char('Color', size = 20)
     peso = fields.Float('Peso', required = True, digits=(4,4))
     tam = fields.Float('Tamaño', required = True, digits=(1,2))
-    sexo = fields.Char("Sexo", size = 1, required = True)
+    sexo = fields.Selection([('m','Macho'),
+                                     ('h','Hembra'),],
+                                     'Sexo')
     foto_mascota = fields.Binary('Foto')
     
 
