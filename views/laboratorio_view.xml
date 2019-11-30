@@ -22,6 +22,7 @@
 							<field name="medicamento_ids">
 								<tree>
 									<field name="nombre" />
+									<field name="precio" />
 									<field name="fechaCaducidad" />
 								</tree>
 							</field>
