@@ -81,23 +81,32 @@
 			</field>
 		</record>
 		
-		<record id="view_calendar_upopet_mascota" model="ir.ui.view">
-		    <field name="name">view_calendar_upopet_mascota</field>
-		    <field name="model">upopet.mascota</field>
-		    <field name="arch" type="xml">
-			    <field name="cita_ids" nolabel="1">
-			        <calendar date_start="fechaHora" color="estado" display="[estado]">
-			            <!-- Fields used for the text of display attribute -->
-						<field name="estado" />
-			        </calendar>
-			    </field>
-		    </field>
+		<!-- Vista Search -->
+		<record model="ir.ui.view" id="view_upopet_mascota_search">
+			<field name="name">view_upopet_mascota_search</field>
+			<field name="model">upopet.mascota</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Mascotas">
+					<filter string="Anciano" domain="[('edad','>',8)]"/>
+					<filter string="Adulto" domain="[('edad','>',2),('edad','&lt;',8)]"/>
+					<filter string="Cachorro" domain="[('edad','&lt;',2)]"/>
+					<separator orientation="vertical" />
+					<field name="raza" />
+					<group expand="0" string="Agrupar por…">
+						<filter name="group_by_raza" string="Raza"
+							context="{'group_by':'raza'}" />
+					</group>
+				</search>
+			</field>
 		</record>
+		
 
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">mascota</field>
 			<field name="res_model">upopet.mascota</field>
-			<field name="view_mode">tree,form,calendar</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_upopet_mascota_search"/>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
 		<menuitem name="Mascotas" id="mascota_submenu"
