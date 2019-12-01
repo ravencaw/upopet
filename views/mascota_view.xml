@@ -96,6 +96,10 @@
 					<group expand="0" string="Agrupar por…">
 						<filter name="group_by_raza" string="Raza"
 							context="{'group_by':'raza'}" />
+						<filter name="group_by_raza" string="Especie"
+							context="{'group_by':'especie'}" />
+						<filter name="group_by_sexo" string="Sexo"
+							context="{'group_by':'sexo'}" />
 					</group>
 				</search>
 			</field>
