@@ -14,34 +14,34 @@
 							<field name="precio" />
 							<field name="fechaCaducidad" />
 							<field name="prospecto" />
-							<field name="subir_prospecto" filename="prospecto"/>
-							<field name="prospecto" invisible="1"/>
+							<field name="subir_prospecto" filename="prospecto" />
+							<field name="prospecto" invisible="1" />
 						</group>
 						<group>
 							<field name="foto_medicamento" nolabel="1" widget="image"
 								class="oe_avatar" />
 						</group>
 						<notebook colspan="4">
-						<page string="Tratamientos">
-						<group colspan="4">
-							<field name="tratamiento_ids" nolabel="1">
-								<tree>
-									<field name="patologia" />
-								</tree>
-							</field>
-						</group>
-						</page>
-						<page string="Laboratorios">
-						<group colspan="4">
-							<field name="laboratorio_ids" nolabel="1">
-								<tree>
-									<field name="nombre" />
-									<field name="direccion" />
-									<field name="telefono" />
-								</tree>
-							</field>
-						</group>
-						</page>
+							<page string="Tratamientos">
+								<group colspan="4">
+									<field name="tratamiento_ids" nolabel="1">
+										<tree>
+											<field name="patologia" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Laboratorios">
+								<group colspan="4">
+									<field name="laboratorio_ids" nolabel="1">
+										<tree>
+											<field name="nombre" />
+											<field name="direccion" />
+											<field name="telefono" />
+										</tree>
+									</field>
+								</group>
+							</page>
 						</notebook>
 					</group>
 				</form>

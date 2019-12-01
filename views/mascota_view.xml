@@ -22,40 +22,40 @@
 							<field name="persona_id" />
 							<field name="especie" />
 							<field name="raza" />
-							<field name="color" /> 
+							<field name="color" />
 						</group>
 						<notebook colspan="4">
-						<page string="Citas">
-							<group>
-								<field name="cita_ids" nolabel="1">
-									<tree>
-										<field name="fechaHora" />
-										<field name="estado" />
-									</tree>
-								</field>
-							</group>
-						</page>
-						<page string="Tratamientos">
-							<group>
-								<field name="tratamiento_ids" nolabel="1">
-									<tree>
-										<field name="patologia" />
-										<field name="inicio" />
-										<field name="fin" />
-									</tree>
-								</field>
-							</group>
-						</page>
-						<page string="Pruebas medicas"> 
-							<group>
-								<field name="pruebamedica_ids" nolabel="1">
-									<tree>
-										<field name="fechaHora" />
-										<field name="tipo" />
-									</tree>
-								</field>
-							</group>
-						</page>
+							<page string="Citas">
+								<group>
+									<field name="cita_ids" nolabel="1">
+										<tree>
+											<field name="fechaHora" />
+											<field name="estado" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Tratamientos">
+								<group>
+									<field name="tratamiento_ids" nolabel="1">
+										<tree>
+											<field name="patologia" />
+											<field name="inicio" />
+											<field name="fin" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Pruebas medicas">
+								<group>
+									<field name="pruebamedica_ids" nolabel="1">
+										<tree>
+											<field name="fechaHoraP" />
+											<field name="tipo" />
+										</tree>
+									</field>
+								</group>
+							</page>
 						</notebook>
 					</group>
 				</form>
@@ -102,6 +102,18 @@
 		</record>
 		
 
+		<!-- Calendar View -->
+		<!-- <record model="ir.ui.view" id="upopet_cita_calendar_view"> -->
+		<!-- <field name="name">upopet_cita_calendar_viewr</field> -->
+		<!-- <field name="model">upopet.cita</field> -->
+		<!-- <field name="type">calendar</field> -->
+		<!-- <field name="arch" type="xml"> -->
+		<!-- <calendar string="Citas" color="veterinario_id" -->
+		<!-- date_start="fechaHora" mode="month"> -->
+		<!-- <field name="estado" /> -->
+		<!-- </calendar> -->
+		<!-- </field> -->
+		<!-- </record> -->
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">mascota</field>
 			<field name="res_model">upopet.mascota</field>

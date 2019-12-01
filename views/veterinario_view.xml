@@ -37,7 +37,7 @@
 						<group colspan="4">
 							<field name="pruebamedica_ids">
 								<tree>
-									<field name="fechaHora" />
+									<field name="fechaHoraP" />
 									<field name="tipo" />
 								</tree>
 							</field>
@@ -66,9 +66,10 @@
 			<field name="res_model">upopet.veterinario</field>
 			<field name="view_mode">tree,form</field>
 		</record>
-		<menuitem name="Veterinarios" id="veterinario_submenu" parent="upopet"
-			sequence="50" />
-		<menuitem name="Ver veterinarios" id="ver_veterinarios_submenu"
-			parent="veterinario_submenu" sequence="110" action="act_veterinario" />
+		<menuitem name="Veterinarios" id="veterinario_submenu"
+			parent="upopet" sequence="50" />
+		<menuitem name="Ver veterinarios"
+			id="ver_veterinarios_submenu" parent="veterinario_submenu"
+			sequence="110" action="act_veterinario" />
 	</data>
 </odoo> 
