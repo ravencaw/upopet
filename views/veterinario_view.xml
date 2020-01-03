@@ -5,9 +5,11 @@
 		<record model="ir.ui.view" id="upopet_veterinario_form">
 			<field name="name">upopet_veterinario_form</field>
 			<field name="model">upopet.veterinario</field>
+			<field name="inherit_id" ref="upopet.upopet_persona_form"></field>
 			<field name="arch" type="xml">
-				<form string="veterinarios">
-					<group string="veterinario">
+				
+				<!-- <form string="veterinarios"> -->
+					<!-- <group string="veterinario"> -->
 						<group>
 							<field name="numColegiado" />
 							<field name="especialidad" />
@@ -42,8 +44,8 @@
 								</tree>
 							</field>
 						</group>
-					</group>
-				</form>
+					<!-- </group> -->
+				<!-- </form> -->
 			</field>
 		</record>
 
