@@ -8,6 +8,8 @@ class veterinario(models.Model):
     _inherit = 'upopet.persona'
     
     _name = 'upopet.veterinario'
+    
+    
 
     numColegiado = fields.Integer('Numero de colegiado', required=True)
     especialidad = fields.Char('Especialidad', size=80, required=True)
