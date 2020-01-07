@@ -9,9 +9,9 @@
 				<form string="citas">
 					<header>
 						<button name="btn_submit_to_presentado" string="Presentado"
-							type="object" class="oe_highlight" estado="pendiente" />
+							type="object" class="oe_highlight" estados="pendiente" />
 						<button name="btn_submit_to_nopresentado" string="No Presentado"
-							type="object" class="oe_highlight" estado="pendiente" />
+							type="object" class="oe_highlight" estados="pendiente" />
 							<field name='estado' widget='statusbar' />
 					</header>
 					<group string="cita">
@@ -70,7 +70,7 @@
 		<record id="act_cita" model="ir.actions.act_window">
 			<field name="name">cita</field>
 			<field name="res_model">upopet.cita</field>
-			<field name="view_mode">tree,form,calendar</field>
+			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />

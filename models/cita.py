@@ -9,7 +9,8 @@ class cita(models.Model):
      estado = fields.Selection([('pendiente', 'Pendiente'),
                                      ('presentado', 'Presentado'),
                                      ('nopresentado', 'No Presentado'), ],
-                                     'Estado')
+                                     'Estado',
+                                     default='pendiente')
 
      tratamiento_ids = fields.One2many('upopet.tratamiento', 'cita_id', string='Tratamiento')
      mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
