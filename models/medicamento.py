@@ -17,3 +17,9 @@ class medicamento(models.Model):
      tratamiento_ids = fields.Many2many('upopet.tratamiento', string='Tratamiento') 
      laboratorio_ids = fields.Many2many('upopet.laboratorio', string='Laboratorio') 
      
+     @api.one 
+     @api.constrains('referencia')
+     def _check_referencia(self):
+
+      if self.referencia.len() == 13:
+        raisemodels.ValidationError('El código de barras consta de 13 dígitos')

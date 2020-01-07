@@ -80,7 +80,6 @@
 				</tree>
 			</field>
 		</record>
-<<<<<<< Updated upstream
 		
 		<!-- Vista Search -->
 		<record model="ir.ui.view" id="view_upopet_mascota_search">
@@ -106,8 +105,6 @@
 			</field>
 		</record>
 		
-=======
->>>>>>> Stashed changes
 
 		<!-- Calendar View -->
 		<!-- <record model="ir.ui.view" id="upopet_cita_calendar_view"> -->
