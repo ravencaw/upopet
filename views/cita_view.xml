@@ -9,9 +9,9 @@
 				<form string="citas">
 					<header>
 						<button name="btn_submit_to_presentado" string="Presentado"
-							type="object" class="oe_highlight" states="pendiente" />
+							type="object" class="oe_highlight" estado="pendiente" />
 						<button name="btn_submit_to_nopresentado" string="No Presentado"
-							type="object" class="oe_highlight" states="pendiente" />
+							type="object" class="oe_highlight" estado="pendiente" />
 							<field name='estado' widget='statusbar' />
 					</header>
 					<group string="cita">
