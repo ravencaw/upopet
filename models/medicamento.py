@@ -7,7 +7,7 @@ class medicamento(models.Model):
      _name = 'upopet.medicamento'
 
      nombre = fields.Char('Nombre', size=8, required=True)
-     referencia = fields.Char('Referencia', size=10, required=True)
+     referencia = fields.Char('Referencia', size=13, required=True)
      precio = fields.Float('Precio', required=True, digits=(4, 3))
      fechaCaducidad = fields.Date('Fecha caducidad', required=True)
      subir_prospecto = fields.Binary(string="Subir prospecto")
@@ -21,5 +21,5 @@ class medicamento(models.Model):
      @api.constrains('referencia')
      def _check_referencia(self):
 
-      if self.referencia.len() == 13:
-        raisemodels.ValidationError('El código de barras consta de 13 dígitos')
+      if self.len(referencia) != 13:
+        raise models.ValidationError('El código de barras consta de 13 dígitos')

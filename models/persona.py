@@ -9,8 +9,8 @@ class persona(models.Model):
     dni = fields.Char('Dni', size=9, required=True)
     nombre = fields.Char('Nombre', size=60, required=True)
     apellidos = fields.Char('Apellidos', size=120, required=True)
-    direccion = fields.Char('Direccion', size=120, required=True)
-    telefono = fields.Integer('Telefono', required=True)
+    direccion = fields.Char('Dirección', size=120, required=True)
+    telefono = fields.Integer('Teléfono', required=True)
     fechNac = fields.Date('Fecha de nacimiento', required=True)
     email = fields.Char('Email', size=120, required=True)
 

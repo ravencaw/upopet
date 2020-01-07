@@ -64,7 +64,7 @@
 
 
 		<record id="act_veterinario" model="ir.actions.act_window">
-			<field name="name">veterinario</field>
+			<field name="name">Veterinario</field>
 			<field name="res_model">upopet.veterinario</field>
 			<field name="view_mode">tree,form</field>
 		</record>

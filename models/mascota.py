@@ -6,7 +6,7 @@ from odoo import models, fields, api
 class mascota(models.Model):
     _name = 'upopet.mascota'
 
-    numChip = fields.Integer('Numero de chip', required=True)
+    numChip = fields.Integer('Número de chip', required=True)
     nombre = fields.Char('Nombre', size=15, required=True)
     especie = fields.Char('Especie', size=20, required=True)
     raza = fields.Char('Raza', size=20, required=True)
@@ -21,7 +21,7 @@ class mascota(models.Model):
 
     cita_ids = fields.One2many('upopet.cita', 'mascota_id', string='Cita')
     tratamiento_ids = fields.One2many('upopet.tratamiento', 'mascota_id', string='Tratamiento')
-    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'mascota_id', string='Prueba medica')
+    pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'mascota_id', string='Prueba Médica')
     persona_id = fields.Many2one('upopet.persona', string='Persona')
 
     #Validacion de numero de chip: numChip = upopet.persona.dni

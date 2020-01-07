@@ -6,8 +6,8 @@
 			<field name="name">upopet_clinica_form</field>
 			<field name="model">upopet.clinica</field>
 			<field name="arch" type="xml">
-				<form string="clinicas">
-					<group string="clinica">
+				<form string="Clínicas">
+					<group string="Clínica">
 						<group>
 							<field name="nombre" />
 							<field name="direccion" />
@@ -19,7 +19,7 @@
 								class="oe_avatar" />
 						</group>
 						<notebook colspan="4">
-							<page string="Pruebas medicas">
+							<page string="Pruebas médicas">
 								<group colspan="4">
 									<field name="pruebamedica_ids" nolabel="1">
 										<tree>
@@ -61,7 +61,7 @@
 
 
 		<record id="act_clinica" model="ir.actions.act_window">
-			<field name="name">clinica</field>
+			<field name="name">Clínica</field>
 			<field name="res_model">upopet.clinica</field>
 			<field name="view_mode">tree,form</field>
 		</record>

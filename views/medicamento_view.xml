@@ -76,7 +76,7 @@
 		</record>
 
 		<record id="act_medicamento" model="ir.actions.act_window">
-			<field name="name">medicamento</field>
+			<field name="name">Medicamento</field>
 			<field name="res_model">upopet.medicamento</field>
 			<field name="view_mode">tree,form,graph</field>
 		</record>

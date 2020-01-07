@@ -49,7 +49,7 @@
 
 
 		<record id="act_tratamiento" model="ir.actions.act_window">
-			<field name="name">tratamiento</field>
+			<field name="name">Tratamiento</field>
 			<field name="res_model">upopet.tratamiento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
