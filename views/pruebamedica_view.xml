@@ -6,8 +6,8 @@
 			<field name="name">upopet_pruebamedica_form</field>
 			<field name="model">upopet.pruebamedica</field>
 			<field name="arch" type="xml">
-				<form string="pruebamedicas">
-					<group string="pruebamedica">
+				<form string="Pruebas Médicas">
+					<group string="Información Prueba Médica">
 						<group>
 							<field name="veterinario_id" />
 							<field name="mascota_id" />
@@ -34,16 +34,32 @@
 				</tree>
 			</field>
 		</record>
-
+		<!-- Vista Calendar -->
+		<record model="ir.ui.view" id="upopet_cita_calendar_view">
+			<field name="name">upopet_pruebamedica_calendar_viewr</field>
+			<field name="model">upopet.pruebamedica</field>
+			<field name="type">calendar</field>
+			<field name="arch" type="xml">
+				<calendar string="Pruebas Medicas" color="veterinario_id"
+					date_start="fechaHoraP" mode="month">
+					<field name="veterinario_id" />
+					<field name="mascota_id" />
+					<field name="clinica_id" />
+					<field name="fechaHoraP" />
+					<field name="tipo" />
+					<field name="observaciones" />
+				</calendar>
+			</field>
+		</record>
 
 		<record id="act_pruebamedica" model="ir.actions.act_window">
 			<field name="name">pruebamedica</field>
 			<field name="res_model">upopet.pruebamedica</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,calendar</field>
 		</record>
-		<menuitem name="Pruebas medicas" id="pruebamedica_submenu"
+		<menuitem name="Pruebas Médicas" id="pruebamedica_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver pruebas medicas"
+		<menuitem name="Ver Pruebas Médicas"
 			id="ver_pruebamedicas_submenu" parent="pruebamedica_submenu"
 			sequence="110" action="act_pruebamedica" />
 	</data>

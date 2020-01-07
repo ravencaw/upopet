@@ -2,7 +2,6 @@
 
 from odoo import models, fields, api
 
-
 class cita(models.Model):
      _name = 'upopet.cita'
 
@@ -16,3 +15,11 @@ class cita(models.Model):
      mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
      clinica_id = fields.Many2one('upopet.clinica', string='Clinica')
      veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
+
+@api.one
+def btn_submit_to_presentado(self):
+    self.write({'estado':'presentado'})
+        
+@api.one
+def btn_submit_to_nopresentado(self):
+    self.write({'estado':'nopresentado'})
