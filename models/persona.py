@@ -15,3 +15,10 @@ class persona(models.Model):
     email = fields.Char('Email', size=120, required=True)
 
     mascota_ids = fields.One2many('upopet.mascota', 'persona_id', string='Mascota')
+
+
+    #Validacion dni: tiene 8 letras y 1 letra al final
+    
+    #Validacion telefono: tiene 9 digitos
+    
+    #Validacion cp: tiene 5 digitos
