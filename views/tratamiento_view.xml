@@ -7,6 +7,13 @@
 			<field name="model">upopet.tratamiento</field>
 			<field name="arch" type="xml">
 				<form string="Tratamientos">
+					<header>
+						<button name="btn_submit_to_enTratamiento" string="Solicitar"
+							type="object" class="oe_highlight" states="solicitado" />
+						<button name="btn_submit_to_Finalizado" string="Finalizar"
+							type="object" class="oe_highlight" states="enTratamiento" />
+							<field name='state' widget='statusbar' />	
+					</header>
 					<group string="Tratamiento">
 						<group>
 							<field name="patologia" />
@@ -49,13 +56,13 @@
 
 
 		<record id="act_tratamiento" model="ir.actions.act_window">
-			<field name="name">tratamiento</field>
+			<field name="name">Tratamiento</field>
 			<field name="res_model">upopet.tratamiento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Tratamiento" id="tratamiento_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver tratamientos"
+		<menuitem name="Ver Tratamientos"
 			id="ver_tratamientos_submenu" parent="tratamiento_submenu"
 			sequence="110" action="act_tratamiento" />
 	</data>

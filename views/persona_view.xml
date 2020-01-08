@@ -6,8 +6,8 @@
 			<field name="name">upopet_persona_form</field>
 			<field name="model">upopet.persona</field>
 			<field name="arch" type="xml">
-				<form string="personas">
-					<group string="persona">
+				<form string="Personas">
+					<group string="Persona">
 						<group>
 							<field name="dni" />
 							<field name="nombre" />
@@ -52,13 +52,13 @@
 
 
 		<record id="act_persona" model="ir.actions.act_window">
-			<field name="name">persona</field>
+			<field name="name">Persona</field>
 			<field name="res_model">upopet.persona</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Personas" id="persona_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver personas" id="ver_personas_submenu"
+		<menuitem name="Ver Personas" id="ver_personas_submenu"
 			parent="persona_submenu" sequence="110" action="act_persona" />
 	</data>
 </odoo> 

@@ -12,4 +12,4 @@ class pruebamedica(models.Model):
 
     veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
     mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
-    clinica_id = fields.Many2one('upopet.clinica', string='Clinica')
+    clinica_id = fields.Many2one('upopet.clinica', string='Clínica')

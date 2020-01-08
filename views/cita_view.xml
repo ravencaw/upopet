@@ -6,7 +6,7 @@
 			<field name="name">upopet_cita_form</field>
 			<field name="model">upopet.cita</field>
 			<field name="arch" type="xml">
-				<form string="citas">
+				<form string="Citas">
 					<header>
 						<button name="btn_submit_to_presentado" string="Presentado"
 							type="object" class="oe_highlight" estados="pendiente" />
@@ -68,13 +68,13 @@
 
 
 		<record id="act_cita" model="ir.actions.act_window">
-			<field name="name">cita</field>
+			<field name="name">Cita</field>
 			<field name="res_model">upopet.cita</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />
-		<menuitem name="Ver citas" id="ver_citas_submenu"
+		<menuitem name="Ver Citas" id="ver_citas_submenu"
 			parent="cita_submenu" sequence="110" action="act_cita" />
 	</data>
 </odoo> 

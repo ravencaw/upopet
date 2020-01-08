@@ -64,13 +64,13 @@
 
 
 		<record id="act_veterinario" model="ir.actions.act_window">
-			<field name="name">veterinario</field>
+			<field name="name">Veterinario</field>
 			<field name="res_model">upopet.veterinario</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Veterinarios" id="veterinario_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver veterinarios"
+		<menuitem name="Ver Veterinarios"
 			id="ver_veterinarios_submenu" parent="veterinario_submenu"
 			sequence="110" action="act_veterinario" />
 	</data>
