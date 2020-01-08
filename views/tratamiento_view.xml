@@ -8,15 +8,11 @@
 			<field name="arch" type="xml">
 				<form string="Tratamientos">
 					<header>
-						<button name="btn_submit_to_pendiente" string="Pendiente"
-							type="object" class="oe_highlight" states="pendiente" />
-						<button name="btn_submit_to_enTratamiento" string="En Tratamiento"
+						<button name="btn_submit_to_enTratamiento" string="Solicitar"
+							type="object" class="oe_highlight" states="solicitado" />
+						<button name="btn_submit_to_Finalizado" string="Finalizar"
 							type="object" class="oe_highlight" states="enTratamiento" />
-						<button name="btn_submit_to_cancelado" string="Cancelado"
-							type="object" class="oe_highlight" states="cancelado" />
-						<button name="btn_submit_to_Finalizado" string="Finalizado"
-							type="object" class="oe_highlight" states="finalizado" />
-							<field name='state' widget='statusbar' />
+							<field name='state' widget='statusbar' />	
 					</header>
 					<group string="Tratamiento">
 						<group>
