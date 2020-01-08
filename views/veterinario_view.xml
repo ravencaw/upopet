@@ -70,7 +70,7 @@
 		</record>
 		<menuitem name="Veterinarios" id="veterinario_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver veterinarios"
+		<menuitem name="Ver Veterinarios"
 			id="ver_veterinarios_submenu" parent="veterinario_submenu"
 			sequence="110" action="act_veterinario" />
 	</data>

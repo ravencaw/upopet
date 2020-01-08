@@ -127,7 +127,7 @@
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
 		<menuitem name="Mascotas" id="mascota_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver mascotas" id="ver_mascotas_submenu"
+		<menuitem name="Ver Mascotas" id="ver_mascotas_submenu"
 			parent="mascota_submenu" sequence="110" action="act_mascota" />
 	</data>
 </odoo> 

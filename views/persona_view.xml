@@ -58,7 +58,7 @@
 		</record>
 		<menuitem name="Personas" id="persona_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver personas" id="ver_personas_submenu"
+		<menuitem name="Ver Personas" id="ver_personas_submenu"
 			parent="persona_submenu" sequence="110" action="act_persona" />
 	</data>
 </odoo> 

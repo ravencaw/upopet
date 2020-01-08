@@ -13,3 +13,10 @@ class laboratorio(models.Model):
      logo_lab = fields.Binary('Logo')
 
      medicamento_ids = fields.Many2many('upopet.medicamento', string='Medicamento')
+
+     @api.one 
+     @api.constrains('cif')
+     def _check_cif(self):
+
+      if len(self.cif) != 9:
+        raise models.ValidationError('El CIF debe constar de 9 dígitos')

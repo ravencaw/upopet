@@ -7,6 +7,17 @@
 			<field name="model">upopet.tratamiento</field>
 			<field name="arch" type="xml">
 				<form string="Tratamientos">
+					<header>
+						<button name="btn_submit_to_pendiente" string="Pendiente"
+							type="object" class="oe_highlight" states="pendiente" />
+						<button name="btn_submit_to_enTratamiento" string="En Tratamiento"
+							type="object" class="oe_highlight" states="enTratamiento" />
+						<button name="btn_submit_to_cancelado" string="Cancelado"
+							type="object" class="oe_highlight" states="cancelado" />
+						<button name="btn_submit_to_Finalizado" string="Finalizado"
+							type="object" class="oe_highlight" states="finalizado" />
+							<field name='state' widget='statusbar' />
+					</header>
 					<group string="Tratamiento">
 						<group>
 							<field name="patologia" />
@@ -55,7 +66,7 @@
 		</record>
 		<menuitem name="Tratamiento" id="tratamiento_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver tratamientos"
+		<menuitem name="Ver Tratamientos"
 			id="ver_tratamientos_submenu" parent="tratamiento_submenu"
 			sequence="110" action="act_tratamiento" />
 	</data>

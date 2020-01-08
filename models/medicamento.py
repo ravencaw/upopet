@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import datetime
 
 
 class medicamento(models.Model):
@@ -20,6 +21,17 @@ class medicamento(models.Model):
      @api.one 
      @api.constrains('referencia')
      def _check_referencia(self):
-
-      if self.len(referencia) != 13:
-        raise models.ValidationError('El código de barras consta de 13 dígitos')
+      if len(self.referencia) != 13:
+        raise models.ValidationError('El código de barras debe constar de 13 dígitos')
+    
+     @api.one 
+     @api.constrains('fechaCaducidad')
+     def _check_fechaCaducidad(self):       
+      ahora = datetime.now()
+      if str(ahora) > self.fechaCaducidad:
+        raise models.ValidationError('La fecha de caducidad debe ser superior a la fecha actual')
+    
+    
+    
+    
+    

@@ -82,7 +82,7 @@
 		</record>
 		<menuitem name="Medicamentos" id="medicamento_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver medicamentos"
+		<menuitem name="Ver Medicamentos"
 			id="ver_medicamentos_submenu" parent="medicamento_submenu"
 			sequence="110" action="act_medicamento" />
 	</data>

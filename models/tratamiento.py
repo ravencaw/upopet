@@ -15,3 +15,27 @@ class tratamiento(models.Model):
     mascota_id = fields.Many2one('upopet.mascota', string='Mascota')
     veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
     medicamento_ids = fields.Many2many('upopet.medicamento', string='Medicamento')
+
+    state = fields.Selection([('pendiente','Pendiente'), 
+                              ('enTratamiento', 'En Tratamiento'),
+                              ('cancelado', 'Cancelado') ,
+                              ('finalizado','Finalizado'),], 
+                              'Estado', default = 'presentado')
+    
+    @api.one
+    def btn_submit_to_pendiente(self):
+        self.write({'state':'Pendiente'})
+        
+    @api.one
+    def btn_submit_to_enTratamiento(self):
+        self.write({'state':'enTratamiento'})
+
+    @api.one
+    def btn_submit_to_cancelado(self):
+        self.write({'state':'cancelado'})
+        
+    @api.one
+    def btn_submit_to_finalizado(self):
+        self.write({'state':'finalizado'})
+    
+    

@@ -74,7 +74,7 @@
 		</record>
 		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />
-		<menuitem name="Ver citas" id="ver_citas_submenu"
+		<menuitem name="Ver Citas" id="ver_citas_submenu"
 			parent="cita_submenu" sequence="110" action="act_cita" />
 	</data>
 </odoo> 
