@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class tratamiento(models.Model):
     _name = 'upopet.tratamiento'
 
+    _rec_name = 'patologia'
     patologia = fields.Char('Patología', size=20, required=True)
     inicio = fields.Datetime('Inicio', required=True, readonly=False, select=True)
     fin = fields.Datetime('Fin', required=False, readonly=False, select=True)

@@ -10,7 +10,7 @@ class veterinario(models.Model):
     _name = 'upopet.veterinario'
     
     
-
+    _rec_name = 'numColegiado'
     numColegiado = fields.Integer('Número de colegiado', required=True)
     especialidad = fields.Char('Especialidad', size=80, required=True)
     nomina = fields.Float('Nómina', digits=(4, 4))

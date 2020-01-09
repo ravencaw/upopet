@@ -121,7 +121,7 @@
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">Mascota</field>
 			<field name="res_model">upopet.mascota</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,search</field>
 			<field name="search_view_id" ref="view_upopet_mascota_search"/>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />

@@ -5,6 +5,7 @@ from odoo import models, fields, api
 class cita(models.Model):
      _name = 'upopet.cita'
 
+     _rec_name = 'fechaHora'
      fechaHora = fields.Datetime('Fecha y Hora', required=True)
      estado = fields.Selection([('pendiente', 'Pendiente'),
                                      ('presentado', 'Presentado'),

@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class pruebamedica(models.Model):
     _name = 'upopet.pruebamedica'
 
+    _rec_name = 'fechaHoraP'
     fechaHoraP = fields.Datetime('Fecha y Hora', required=True)
     tipo = fields.Char('Tipo', size=20, required=True)
     observaciones = fields.Text('Observaciones')
