@@ -9,7 +9,6 @@ class veterinario(models.Model):
     
     _name = 'upopet.veterinario'
     
-    
     _rec_name = 'numColegiado'
     numColegiado = fields.Char('Número de colegiado', size=9, required=True)
     especialidad = fields.Char('Especialidad', size=80, required=True)
@@ -20,8 +19,7 @@ class veterinario(models.Model):
     cita_ids = fields.One2many('upopet.cita', 'veterinario_id', string='Cita')
     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'veterinario_id', string='Prueba Médica')
 
-    #Validacion numero de colegiado
-    
+    #Validación número de colegiado: tiene 9 dígitos
     @api.one 
     @api.constrains('numColegiado')
     def _check_numColegiado(self):

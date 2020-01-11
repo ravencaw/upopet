@@ -34,7 +34,8 @@ class tratamiento(models.Model):
     @api.one
     def btn_submit_to_Finalizado(self):
         self.write({'state':'finalizado'})
-        
+    
+    #Validación fecha de inicio: tiene que ser superior que la fecha actual
     @api.one 
     @api.constrains('inicio')
     def _check_inicio(self):       
@@ -42,6 +43,7 @@ class tratamiento(models.Model):
       if str(ahora) > self.inicio:
         raise models.ValidationError('La fecha de inicio del tratamiento debe ser superior a la fecha actual')
     
+    #Validación fecha fin: tiene que ser superior que la fecha de inicio
     @api.one 
     @api.constrains('fin')
     def _check_fin(self):       

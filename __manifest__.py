@@ -2,7 +2,7 @@
 {
     'name': "upopet",
     'summary': """Veterinario management""",
-    'description': """Veterinario management:veterinarios, mascotas, citas...""",
+    'description': """Veterinario management: veterinarios, mascotas, citas...""",
     'author': "Equipo 15",
     'category': 'Clinica',
     'version': '0.2',

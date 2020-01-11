@@ -19,7 +19,9 @@ class persona(models.Model):
     mascota_ids = fields.One2many('upopet.mascota', 'persona_id', string='Mascota')
 
 
-    #Validacion dni: tiene 8 letras y 1 letra al final
+    #Validación dni: tiene 8 letras y 1 una letra al final
+
+    #Validación gmail: tiene que tener un formato en concreto 
     @api.one 
     @api.constrains('email')
     def _check_email(self):
@@ -27,7 +29,8 @@ class persona(models.Model):
             raise models.ValidationError('El mail debe constar de al menos 7 caracteres')
         if re.match("^.+@(\[?)[a-zA-Z0-9-.]+.([a-zA-Z]{2,3}|[0-9]{1,3})(]?)$", self.email) == None:
             raise models.ValidationError('El formato del email debe ser example@mail.com')
-    #Validacion telefono: tiene 9 digitos
+        
+    #Validación teléfono: tiene 9 dígitos
     @api.one 
     @api.constrains('telefono')
     def _check_telefono(self):

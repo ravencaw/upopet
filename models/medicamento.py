@@ -19,12 +19,14 @@ class medicamento(models.Model):
      tratamiento_ids = fields.Many2many('upopet.tratamiento', string='Tratamiento') 
      laboratorio_ids = fields.Many2many('upopet.laboratorio', string='Laboratorio') 
      
+     #Validación referencia: tiene 13 dígitos
      @api.one 
      @api.constrains('referencia')
      def _check_referencia(self):
       if len(self.referencia) != 13:
         raise models.ValidationError('El código de barras debe constar de 13 dígitos')
     
+    #Validación fecha de caducidad: tiene que ser superior que la fecha actual
      @api.one 
      @api.constrains('fechaCaducidad')
      def _check_fechaCaducidad(self):       

@@ -15,3 +15,7 @@ class clinica(models.Model):
 
      pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'clinica_id', string='Prueba Médica')
      cita_ids = fields.One2many('upopet.cita', 'clinica_id', string='Cita')
+
+    #Validación cp: tiene 5 números
+    
+    #Validación teléfono: tiene 9 números

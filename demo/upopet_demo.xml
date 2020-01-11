@@ -12,6 +12,8 @@
 	 	 	 	<field name="peso">15,0</field>
 	 	 	 	<field name="tam">50,2</field>
 	 	 	 	<field name="sexo">Hembra</field> 
+	 	 	 	<field name="cita_ids" 	eval="[(6, 	0, 	[cita40, ])]" ></field> 
+	 	 	 	<field name="tratamiento_ids" 	eval="[(6, 	0, 	[tratamiento20, ])]" ></field> 
 	 	 	</record> 
 	 	 	<record id="mascota2" model="upopet.mascota"> 
 	 	 	 	<field name="numChip">45634216V</field> 
@@ -65,8 +67,8 @@
 	 	 	 	<field name="fin"></field>
 	 	 	 	<field name="observaciones"></field>
 	 	 	 	<field name="cita_id" ref="cita40"></field> 
-	 	 	 	<field name="mascota_id" ref="mascota1"></field> 
-	 	 	 	<field name="veterinario_id" ref="veterinario6"></field> 
+	 	 	 	<field name="mascota_id" ref="34543678V"></field> 
+	 	 	 	<field name="veterinario_id" ref="987213456"></field> 
 	 	 	 	<field name="medicamento_ids" 	eval="[(6, 	0, 	[medicamento80, medicamento88, ])]" ></field> 
 	 	 	</record> 
 <!-- Citas -->

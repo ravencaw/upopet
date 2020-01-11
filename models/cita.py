@@ -27,6 +27,9 @@ class cita(models.Model):
      @api.one
      def btn_submit_to_nopresentado(self):
         self.write({'estado':'nopresentado'})
+        
+    #Validación fecha/hora: tiene que ser superior que la fecha actual
+    
     
      @api.one
      def compute_cita_log(self):
