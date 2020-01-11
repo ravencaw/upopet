@@ -7,6 +7,7 @@ from datetime import datetime
 class medicamento(models.Model):
      _name = 'upopet.medicamento'
 
+     _rec_name = 'nombre'
      nombre = fields.Char('Nombre', size=8, required=True)
      referencia = fields.Char('Referencia', size=13, required=True)
      precio = fields.Float('Precio', required=True, digits=(4, 3))

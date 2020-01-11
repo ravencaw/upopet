@@ -70,7 +70,11 @@
 		<record id="act_cita" model="ir.actions.act_window">
 			<field name="name">Cita</field>
 			<field name="res_model">upopet.cita</field>
+<<<<<<< HEAD
 			<field name="view_mode">tree,form</field>
+=======
+			<field name="view_mode">tree,form, calendar</field>
+>>>>>>> Maria
 		</record>
 		<menuitem name="Citas" id="cita_submenu" parent="upopet"
 			sequence="50" />

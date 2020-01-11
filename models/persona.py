@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class persona(models.Model):
     _name = 'upopet.persona'
 
+    _rec_name = 'dni'
     dni = fields.Char('Dni', size=9, required=True)
     nombre = fields.Char('Nombre', size=60, required=True)
     apellidos = fields.Char('Apellidos', size=120, required=True)

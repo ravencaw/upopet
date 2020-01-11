@@ -5,7 +5,8 @@ from odoo import models, fields, api
 
 class clinica(models.Model):
      _name = 'upopet.clinica'
-
+     
+     _rec_name = 'nombre'
      nombre = fields.Char('Nombre', size=70, required=True)
      direccion = fields.Char('Dirección', size=120, required=True)
      cp = fields.Integer('Codigo Postal', size=5, required=True)

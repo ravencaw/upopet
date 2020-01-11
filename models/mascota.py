@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class mascota(models.Model):
     _name = 'upopet.mascota'
 
+    _rec_name = 'numChip'
     numChip = fields.Integer('Número de chip', required=True)
     nombre = fields.Char('Nombre', size=15, required=True)
     especie = fields.Char('Especie', size=20, required=True)

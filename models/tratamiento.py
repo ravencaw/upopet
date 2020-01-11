@@ -6,6 +6,9 @@ from odoo import models, fields, api
 class tratamiento(models.Model):
     _name = 'upopet.tratamiento'
 
+    _rec_name = 'tratamientoID'
+    tratamientoID = fields.Integer('ID tratamiento', compute='compute_tratamiento_log', store=False)
+    
     patologia = fields.Char('Patología', size=20, required=True)
     inicio = fields.Datetime('Inicio', required=True, readonly=False, select=True)
     fin = fields.Datetime('Fin', required=False, readonly=False, select=True)
@@ -32,4 +35,7 @@ class tratamiento(models.Model):
     def btn_submit_to_Finalizado(self):
         self.write({'state':'finalizado'})
     
+    @api.one
+    def compute_tratamiento_log(self):
+      self.tratamientoID = self.id
    
