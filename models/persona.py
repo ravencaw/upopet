@@ -13,7 +13,7 @@ class persona(models.Model):
     nombre = fields.Char('Nombre', size=60, required=True)
     apellidos = fields.Char('Apellidos', size=120, required=True)
     direccion = fields.Char('Dirección', size=120, required=True)
-    telefono = fields.Char('Teléfono', size=9, required=True)
+    telefono = fields.Integer('Teléfono', size=9, required=True)
     fechNac = fields.Date('Fecha de nacimiento', required=True)
     email = fields.Char('Email', size=120, required=True)
 
@@ -32,10 +32,8 @@ class persona(models.Model):
     @api.one 
     @api.constrains('telefono')
     def _check_telefono(self):
-        if len(self.telefono) != 9:
+        if len(str(self.telefono)) != 9:
             raise models.ValidationError('El número de telefono debe constar de 9 dígitos')
-        if self.telefono.isdigit() == False:
-            raise models.ValidationError('El número de telefono debe constar SOLO de dígitos')
     
     
     
