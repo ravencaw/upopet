@@ -71,7 +71,11 @@
 			<field name="name">Cita</field>
 			<field name="res_model">upopet.cita</field>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<field name="view_mode">tree,form</field>
+=======
+			<field name="view_mode">tree,form, calendar</field>
+>>>>>>> Maria
 =======
 			<field name="view_mode">tree,form, calendar</field>
 >>>>>>> Maria

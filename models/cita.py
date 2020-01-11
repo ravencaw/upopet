@@ -20,16 +20,9 @@ class cita(models.Model):
      clinica_id = fields.Many2one('upopet.clinica', string='Clinica')
      veterinario_id = fields.Many2one('upopet.veterinario', string='Veterinario')
 
-<<<<<<< HEAD
-#@api.one
+@api.one
 def btn_submit_to_presentado(self):
     self.write({'estado':'presentado'})
-=======
- 
-     @api.one
-     def btn_submit_to_presentado(self):
-        self.write({'estado':'presentado'})
->>>>>>> Maria
         
      @api.one
      def btn_submit_to_nopresentado(self):
