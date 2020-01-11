@@ -25,7 +25,7 @@ class persona(models.Model):
     def _check_email(self):
         if len(self.email) < 7:
             raise models.ValidationError('El mail debe constar de al menos 7 caracteres')
-        if re.match("^.+@(\[?)[a-zA-Z0-9-.]+.([a-zA-Z]{2,3}|[0-9]{1,3})(]?)$", self.email) != None:
+        if re.match("^.+@(\[?)[a-zA-Z0-9-.]+.([a-zA-Z]{2,3}|[0-9]{1,3})(]?)$", self.email) == None:
             raise models.ValidationError('El formato del email debe ser example@mail.com')
     #Validacion telefono: tiene 9 digitos
     @api.one 
