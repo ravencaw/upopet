@@ -21,3 +21,10 @@ class laboratorio(models.Model):
 
       if len(self.cif) != 9:
         raise models.ValidationError('El CIF debe constar de 9 dígitos')
+
+     @api.one 
+     @api.constrains('telefono')
+     def _check_telefono(self):
+
+      if len(str(self.telefono)) != 9:
+        raise models.ValidationError('El teléfono debe constar de 9 dígitos')
