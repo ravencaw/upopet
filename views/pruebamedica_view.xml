@@ -35,8 +35,8 @@
 			</field>
 		</record>
 		<!-- Vista Calendar -->
-		<record model="ir.ui.view" id="upopet_cita_calendar_view">
-			<field name="name">upopet_pruebamedica_calendar_viewr</field>
+		<record model="ir.ui.view" id="upopet_pruebamedica_calendar_view">
+			<field name="name">upopet_pruebamedica_calendar_view</field>
 			<field name="model">upopet.pruebamedica</field>
 			<field name="type">calendar</field>
 			<field name="arch" type="xml">
@@ -50,7 +50,7 @@
 					<field name="observaciones" />
 				</calendar>
 			</field>
-		</record>
+		</record> 
 
 		<record id="act_pruebamedica" model="ir.actions.act_window">
 			<field name="name">Prueba Médica</field>

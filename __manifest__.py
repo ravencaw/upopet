@@ -17,6 +17,6 @@
             'views/medicamento_view.xml',
             'views/laboratorio_view.xml',
              ],
-    #'demo': ['demo/upopet_demo.xml'],
+    'demo': ['demo/upopet_demo.xml'],
     'application': True,
 }

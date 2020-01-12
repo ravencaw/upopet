@@ -191,7 +191,7 @@
 	 	 	 	<field name="veterinario_id" ref="987213456"></field>
 	 	 	</record>
 	 	 	<record id="pruebamedica61" model="upopet.pruebamedica"> 
-	 	 	 	<field name="fechaHoraP">2019-10-05 17:35:00</field> 
+	 	 	 	<field name="fechaHoraP">2020-10-05 17:35:00</field> 
 	 	 	 	<field name="tipo"></field>
 	 	 	 	<field name="observaciones"></field>
 	 	 	 	<field name="mascota_id" ref="mascota3"></field> 
@@ -199,7 +199,7 @@
 	 	 	 	<field name="veterinario_id" ref="987213456"></field>
 	 	 	</record>
 	 	 	<record id="pruebamedica62" model="upopet.pruebamedica"> 
-	 	 	 	<field name="fechaHoraP">2019-12-12 11:42:00</field> 
+	 	 	 	<field name="fechaHoraP">2020-12-12 11:42:00</field> 
 	 	 	 	<field name="tipo"></field>
 	 	 	 	<field name="observaciones"></field>
 	 	 	 	<field name="mascota_id" ref="mascota4"></field> 
@@ -211,7 +211,7 @@
 	 	 	<record id="cita40" model="upopet.cita"> 
 	 	 	 	<field name="fechaHoraInicio">2020-02-16 15:00:00</field> 
 	 	 	 	<field name="fechaHoraFin">2020-02-16 15:30:00</field> 
-	 	 	 	<field name="estado"></field>
+	 	 	 	<field name="estado">pendiente</field>
 	 	 	 	<field name="mascota_id" ref="mascota1"></field> 
 	 	 	 	<field name="clinica_id" ref="Upopet"></field> 
 	 	 	 	<field name="veterinario_id" ref="987213456"></field> 
@@ -219,7 +219,7 @@
 	 	 	 <record id="cita41" model="upopet.cita"> 
 	 	 	 	<field name="fechaHoraInicio">2020-06-20 18:30:00</field> 
 	 	 	 	<field name="fechaHoraFin">2020-06-20 19:00:00</field>
-	 	 	 	<field name="estado"></field>
+	 	 	 	<field name="estado">pendiente</field>
 	 	 	 	<field name="mascota_id" ref="mascota2"></field> 
 	 	 	 	<field name="clinica_id" ref="Upopet"></field> 
 	 	 	 	<field name="veterinario_id" ref="987213456"></field> 
@@ -227,7 +227,7 @@
 	 	 	 <record id="cita42" model="upopet.cita"> 
 	 	 	 	<field name="fechaHoraInicio">2020-10-05 10:45:00</field> 
 	 	 	 	<field name="fechaHoraFin">2020-10-05 11:15:00</field> 
-	 	 	 	<field name="estado"></field>
+	 	 	 	<field name="estado">pendiente</field>
 	 	 	 	<field name="mascota_id" ref="mascota3"></field> 
 	 	 	 	<field name="clinica_id" ref="Upopet"></field> 
 	 	 	 	<field name="veterinario_id" ref="987213456"></field> 
@@ -235,7 +235,7 @@
 	 	 	 <record id="cita43" model="upopet.cita"> 
 	 	 	 	<field name="fechaHoraInicio">2020-02-27 11:45:00</field> 
 	 	 	 	<field name="fechaHoraFin">2020-02-27 12:15:00</field>
-	 	 	 	<field name="estado"></field>
+	 	 	 	<field name="estado">pendiente</field>
 	 	 	 	<field name="mascota_id" ref="mascota4"></field> 
 	 	 	 	<field name="clinica_id" ref="Upopet"></field> 
 	 	 	 	<field name="veterinario_id" ref="987212231"></field> 
