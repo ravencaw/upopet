@@ -2,6 +2,7 @@
 <<<<<<<=Updated upstream
 >>>>>>>=Stashed changes
 eclipse.preferences.version=1
+encoding//controllers/__init__.py=utf-8
 encoding//models/__init__.py=utf-8
 encoding//models/cita.py=utf-8
 encoding//models/clinica.py=utf-8

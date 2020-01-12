@@ -7,6 +7,13 @@
 			<field name="model">upopet.tratamiento</field>
 			<field name="arch" type="xml">
 				<form string="Tratamientos">
+					<header>
+						<button name="btn_submit_to_enTratamiento" string="Solicitar"
+							type="object" class="oe_highlight" states="solicitado" />
+						<button name="btn_submit_to_Finalizado" string="Finalizar"
+							type="object" class="oe_highlight" states="enTratamiento" />
+							<field name='state' widget='statusbar' />	
+					</header>
 					<group string="Tratamiento">
 						<group>
 							<field name="patologia" />
@@ -46,16 +53,40 @@
 				</tree>
 			</field>
 		</record>
+		
+		<!-- Vista Search -->
+		<record model="ir.ui.view" id="view_upopet_tratamiento_search">
+			<field name="name">view_upopet_tratamiento_search</field>
+			<field name="model">upopet.tratamiento</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Tratamientos">
+					<filter string="Estado: Solicitado" domain="[('state','=','solicitado')]"/>
+					<filter string="Estado: En tratamiento" domain="[('state','=','enTratamiento')]"/>
+					<filter string="Estado: Finalizado" domain="[('state','=','finalizado')]"/>
+					<separator orientation="vertical" />
+					<field name="patologia" />
+					<group expand="0" string="Agrupar por…">
+						<filter name="group_by_patologia" string="Patologia"
+							context="{'group_by':'patologia'}" />
+						<filter name="group_by_inicio" string="Fecha de inicio"
+							context="{'group_by':'inicio'}" />
+						<filter name="group_by_fin" string="Fecha de fin"
+							context="{'group_by':'fin'}" />
+					</group>
+				</search>
+			</field>
+		</record>
 
 
 		<record id="act_tratamiento" model="ir.actions.act_window">
-			<field name="name">tratamiento</field>
+			<field name="name">Tratamiento</field>
 			<field name="res_model">upopet.tratamiento</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Tratamiento" id="tratamiento_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver tratamientos"
+		<menuitem name="Ver Tratamientos"
 			id="ver_tratamientos_submenu" parent="tratamiento_submenu"
 			sequence="110" action="act_tratamiento" />
 	</data>

@@ -48,13 +48,13 @@
 
 
 		<record id="act_laboratorio" model="ir.actions.act_window">
-			<field name="name">laboratorio</field>
+			<field name="name">Laboratorio</field>
 			<field name="res_model">upopet.laboratorio</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Laboratorios" id="laboratorio_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver laboratorios"
+		<menuitem name="Ver Laboratorios"
 			id="ver_laboratorios_submenu" parent="laboratorio_submenu"
 			sequence="110" action="act_laboratorio" />
 	</data>

@@ -6,8 +6,8 @@
 			<field name="name">upopet_clinica_form</field>
 			<field name="model">upopet.clinica</field>
 			<field name="arch" type="xml">
-				<form string="clinicas">
-					<group string="clinica">
+				<form string="Clínicas">
+					<group string="Clínica">
 						<group>
 							<field name="nombre" />
 							<field name="direccion" />
@@ -19,7 +19,7 @@
 								class="oe_avatar" />
 						</group>
 						<notebook colspan="4">
-							<page string="Pruebas medicas">
+							<page string="Pruebas médicas">
 								<group colspan="4">
 									<field name="pruebamedica_ids" nolabel="1">
 										<tree>
@@ -33,8 +33,9 @@
 								<group>
 									<field name="cita_ids" nolabel="1">
 										<tree>
-											<field name="fechaHora" />
-											<field name="estado" />
+											<field name="fechaHoraInicio" />
+											<field name="fechaHoraFin" />
+											<field name="state" />
 										</tree>
 									</field>
 								</group>
@@ -58,16 +59,15 @@
 				</tree>
 			</field>
 		</record>
-
-
+		
 		<record id="act_clinica" model="ir.actions.act_window">
-			<field name="name">clinica</field>
+			<field name="name">Clínica</field>
 			<field name="res_model">upopet.clinica</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 		<menuitem name="Clinicas" id="clinica_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver clinicas" id="ver_clinicas_submenu"
+		<menuitem name="Ver Clínicas" id="ver_clinicas_submenu"
 			parent="clinica_submenu" sequence="110" action="act_clinica" />
 	</data>
 </odoo> 

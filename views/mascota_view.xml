@@ -29,8 +29,9 @@
 								<group>
 									<field name="cita_ids" nolabel="1">
 										<tree>
-											<field name="fechaHora" />
-											<field name="estado" />
+											<field name="fechaHoraInicio" />
+											<field name="fechaHoraFin" />
+											<field name="state" />
 										</tree>
 									</field>
 								</group>
@@ -104,30 +105,17 @@
 				</search>
 			</field>
 		</record>
-		
 
-		<!-- Calendar View -->
-		<!-- <record model="ir.ui.view" id="upopet_cita_calendar_view"> -->
-		<!-- <field name="name">upopet_cita_calendar_viewr</field> -->
-		<!-- <field name="model">upopet.cita</field> -->
-		<!-- <field name="type">calendar</field> -->
-		<!-- <field name="arch" type="xml"> -->
-		<!-- <calendar string="Citas" color="veterinario_id" -->
-		<!-- date_start="fechaHora" mode="month"> -->
-		<!-- <field name="estado" /> -->
-		<!-- </calendar> -->
-		<!-- </field> -->
-		<!-- </record> -->
 		<record id="act_mascota" model="ir.actions.act_window">
-			<field name="name">mascota</field>
+			<field name="name">Mascota</field>
 			<field name="res_model">upopet.mascota</field>
-			<field name="view_mode">tree,form</field>
+			<field name="view_mode">tree,form,search</field>
 			<field name="search_view_id" ref="view_upopet_mascota_search"/>
 		</record>
 		<menuitem id="upopet" name="Upopet" action="act_mascota" />
 		<menuitem name="Mascotas" id="mascota_submenu"
 			parent="upopet" sequence="50" />
-		<menuitem name="Ver mascotas" id="ver_mascotas_submenu"
+		<menuitem name="Ver Mascotas" id="ver_mascotas_submenu"
 			parent="mascota_submenu" sequence="110" action="act_mascota" />
 	</data>
 </odoo> 
