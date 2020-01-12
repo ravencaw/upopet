@@ -24,11 +24,5 @@ class mascota(models.Model):
     tratamiento_ids = fields.One2many('upopet.tratamiento', 'mascota_id', string='Tratamiento')
     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'mascota_id', string='Prueba Médica')
     persona_id = fields.Many2one('upopet.persona', string='Persona')
-
-    #Validacion de numero de chip: numChip = upopet.persona.dni
     
-    #Validacion especie: no tiene numeros
     
-    #Validacion raza: no tiene numeros
-    
-    #Validacion color: no tiene numeros

@@ -104,20 +104,7 @@
 				</search>
 			</field>
 		</record>
-		
 
-		<!-- Calendar View -->
-		<!-- <record model="ir.ui.view" id="upopet_cita_calendar_view"> -->
-		<!-- <field name="name">upopet_cita_calendar_viewr</field> -->
-		<!-- <field name="model">upopet.cita</field> -->
-		<!-- <field name="type">calendar</field> -->
-		<!-- <field name="arch" type="xml"> -->
-		<!-- <calendar string="Citas" color="veterinario_id" -->
-		<!-- date_start="fechaHora" mode="month"> -->
-		<!-- <field name="estado" /> -->
-		<!-- </calendar> -->
-		<!-- </field> -->
-		<!-- </record> -->
 		<record id="act_mascota" model="ir.actions.act_window">
 			<field name="name">Mascota</field>
 			<field name="res_model">upopet.mascota</field>

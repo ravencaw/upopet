@@ -2,7 +2,7 @@
 {
     'name': "upopet",
     'summary': """Veterinario management""",
-    'description': """Veterinario management:veterinarios, mascotas, citas...""",
+    'description': """Veterinario management: veterinarios, mascotas, citas...""",
     'author': "Equipo 15",
     'category': 'Clinica',
     'version': '0.2',
@@ -17,6 +17,6 @@
             'views/medicamento_view.xml',
             'views/laboratorio_view.xml',
              ],
-    'demo': [ ],
+    'demo': ['demo/upopet_demo.xml'],
     'application': True,
 }

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-
+from datetime import datetime
 
 class tratamiento(models.Model):
     _name = 'upopet.tratamiento'
@@ -34,6 +34,22 @@ class tratamiento(models.Model):
     @api.one
     def btn_submit_to_Finalizado(self):
         self.write({'state':'finalizado'})
+    
+    #Validación fecha de inicio: tiene que ser superior que la fecha actual
+    @api.one 
+    @api.constrains('inicio')
+    def _check_inicio(self):       
+      ahora = datetime.now()
+      if str(ahora) > self.inicio:
+        raise models.ValidationError('La fecha de inicio del tratamiento debe ser superior a la fecha actual')
+    
+    #Validación fecha fin: tiene que ser superior que la fecha de inicio
+    @api.one 
+    @api.constrains('fin')
+    def _check_fin(self):       
+      if str(self.inicio) > self.fin:
+        raise models.ValidationError('La fecha fin del tratamiento debe ser superior a la fecha de inicio')
+    
     
     @api.one
     def compute_tratamiento_log(self):

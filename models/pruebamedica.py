@@ -20,3 +20,5 @@ class pruebamedica(models.Model):
     @api.one
     def compute_pruebamedica_log(self):
       self.pruebamedicaID = self.id
+      
+      #Validación fecha/hora: tiene que ser superior que la fecha actual

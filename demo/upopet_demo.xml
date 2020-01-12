@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo> 
+	 	<data noupdate="1"> 
+<!-- Mascotas -->
+	 	 	<record id="mascota1" model="upopet.mascota"> 
+	 	 	 	<field name="numChip">34543678V</field> 
+	 	 	 	<field name="nombre">Miley</field>
+	 	 	 	<field name="especie">Perro</field>
+	 	 	 	<field name="raza">Labrador</field>
+	 	 	 	<field name="edad">0,8</field>
+	 	 	 	<field name="color">Negro</field>
+	 	 	 	<field name="peso">15,0</field>
+	 	 	 	<field name="tam">50,2</field>
+	 	 	 	<field name="sexo">Hembra</field> 
+	 	 	 	<field name="cita_ids" 	eval="[(6, 	0, 	[cita40, ])]" ></field> 
+	 	 	 	<field name="tratamiento_ids" 	eval="[(6, 	0, 	[tratamiento20, ])]" ></field> 
+	 	 	</record> 
+	 	 	<record id="mascota2" model="upopet.mascota"> 
+	 	 	 	<field name="numChip">45634216V</field> 
+	 	 	 	<field name="nombre">Tanos</field>
+	 	 	 	<field name="especie">Perro</field>
+	 	 	 	<field name="raza">Bodeguero</field>
+	 	 	 	<field name="edad">1,6</field>
+	 	 	 	<field name="color">Marrón</field>
+	 	 	 	<field name="peso">9,0</field>
+	 	 	 	<field name="tam">35,4</field>
+	 	 	 	<field name="sexo">Macho</field> 
+	 	 	</record> 
+	 	 	<record id="mascota3" model="upopet.mascota"> 
+	 	 	 	<field name="numChip">47658970M</field> 
+	 	 	 	<field name="nombre">Mina</field>
+	 	 	 	<field name="especie">Gato</field>
+	 	 	 	<field name="raza">Persa</field>
+	 	 	 	<field name="edad">5,9</field>
+	 	 	 	<field name="color">Blanco</field>
+	 	 	 	<field name="peso">7,0</field>
+	 	 	 	<field name="tam">30,0</field>
+	 	 	 	<field name="sexo">Hembra</field> 
+	 	 	</record> 
+	 	 	<record id="mascota4" model="upopet.mascota"> 
+	 	 	 	<field name="numChip">35765909L</field> 
+	 	 	 	<field name="nombre">Tornado</field>
+	 	 	 	<field name="especie">Caballo</field>
+	 	 	 	<field name="raza">Purasangre</field>
+	 	 	 	<field name="edad">10,6</field>
+	 	 	 	<field name="color">Negro</field>
+	 	 	 	<field name="peso">500,0</field>
+	 	 	 	<field name="tam">160,0</field>
+	 	 	 	<field name="sexo">Macho</field> 
+	 	 	</record>
+<!-- Tratamientos --> 
+	 	 	<record id="tratamiento20" model="upopet.tratamiento"> 
+	 	 	 	<field name="patologia"></field> 
+	 	 	 	<field name="inicio"></field>
+	 	 	 	<field name="fin"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	</record>
+	 	 	<record id="tratamiento21" model="upopet.tratamiento"> 
+	 	 	 	<field name="patologia"></field> 
+	 	 	 	<field name="inicio"></field>
+	 	 	 	<field name="fin"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	</record>  
+	 	 	<record id="tratamiento22" model="upopet.tratamiento"> 
+	 	 	 	<field name="patologia"></field> 
+	 	 	 	<field name="inicio"></field>
+	 	 	 	<field name="fin"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	 	<field name="cita_id" ref="cita40"></field> 
+	 	 	 	<field name="mascota_id" ref="34543678V"></field> 
+	 	 	 	<field name="veterinario_id" ref="987213456"></field> 
+	 	 	 	<field name="medicamento_ids" 	eval="[(6, 	0, 	[medicamento80, medicamento88, ])]" ></field> 
+	 	 	</record> 
+<!-- Citas -->
+	 	 	<record id="cita40" model="upopet.cita"> 
+	 	 	 	<field name="fechaHora">16/02/2020 15:00:00</field> 
+	 	 	 	<field name="estado"></field>
+	 	 	 </record>  	
+	 	 	 <record id="cita41" model="upopet.cita"> 
+	 	 	 	<field name="fechaHora">20/06/2020 18:30:00</field> 
+	 	 	 	<field name="estado"></field>
+	 	 	 </record>  
+	 	 	 <record id="cita42" model="upopet.cita"> 
+	 	 	 	<field name="fechaHora">05/10/2020 10:45:00</field> 
+	 	 	 	<field name="estado"></field>
+	 	 	 </record>  
+<!-- Pruebas Médicas -->
+	 	 	<record id="pruebamedica60" model="upopet.pruebamedica"> 
+	 	 	 	<field name="fechaHoraP">08/11/2020 12:33:00</field> 
+	 	 	 	<field name="tipo"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	</record>
+	 	 	<record id="pruebamedica61" model="upopet.pruebamedica"> 
+	 	 	 	<field name="fechaHoraP">05/10/2019 17:35:00</field> 
+	 	 	 	<field name="tipo"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	</record>
+	 	 	<record id="pruebamedica62" model="upopet.pruebamedica"> 
+	 	 	 	<field name="fechaHoraP">12/12/2019 11:42:00</field> 
+	 	 	 	<field name="tipo"></field>
+	 	 	 	<field name="observaciones"></field>
+	 	 	</record>
+<!-- Clínicas -->
+	 	 	<record id="Upopet" model="upopet.clinica"> 
+	 	 	 	<field name="nombre">Upopet</field> 
+	 	 	 	<field name="direccion">Ctra. de Utrera, km. 1</field>
+	 	 	 	<field name="cp">41013</field>
+	 	 	 	<field name="telefono">954349200</field>
+	 	 	</record> 
+<!-- Personas -->
+	 	 	<record id="34543678V" model="upopet.persona"> 
+	 	 	 	<field name="dni">34543678V</field> 
+	 	 	 	<field name="nombre">María</field>
+	 	 	 	<field name="apellidos">Jiménez Hernández</field>
+	 	 	 	<field name="direccion">Calle Carmona, 15</field>
+	 	 	 	<field name="telefono">657483922</field>
+	 	 	 	<field name="fechNac">27/03/1998</field>
+	 	 	 	<field name="email">eme@gmail.com</field>
+	 	 	</record>
+	 	 	<record id="45634216V" model="upopet.persona"> 
+	 	 	 	<field name="dni">45634216V</field> 
+	 	 	 	<field name="nombre">Adrián</field>
+	 	 	 	<field name="apellidos">Casado García</field>
+	 	 	 	<field name="direccion">Calle Sevilla, 7</field>
+	 	 	 	<field name="telefono">653728145</field>
+	 	 	 	<field name="fechNac">12/04/1993</field>
+	 	 	 	<field name="email">adlian@gmail.com</field>
+	 	 	</record>	 	 	
+	 	 	<record id="47658970M" model="upopet.persona"> 
+	 	 	 	<field name="dni">47658970M</field> 
+	 	 	 	<field name="nombre">Sebastián</field>
+	 	 	 	<field name="apellidos">Pedrosa Granados</field>
+	 	 	 	<field name="direccion">Calle Granada, 2</field>
+	 	 	 	<field name="telefono">647835654</field>
+	 	 	 	<field name="fechNac">22/07/1995</field>
+	 	 	 	<field name="email">sebas@gmail.com</field>
+	 	 	</record>	 	 	
+	 	 	<record id="35765909L" model="upopet.persona"> 
+	 	 	 	<field name="dni">35765909L</field> 
+	 	 	 	<field name="nombre">Alba</field>
+	 	 	 	<field name="apellidos">Benítez Barrera</field>
+	 	 	 	<field name="direccion">Calle Viso del Alcor, 17</field>
+	 	 	 	<field name="telefono">624354688</field>
+	 	 	 	<field name="fechNac">07/05/1998</field>
+	 	 	 	<field name="email">albabb@gmail.com</field>
+	 	 	</record>
+<!-- Veterinarios -->
+	 	 	<record id="987213456" model="upopet.veterinario"> 
+	 	 	 	<field name="numColegiado">987213456</field> 
+	 	 	 	<field name="especialidad">cardiología</field>
+	 	 	 	<field name="nomina">2.500,30</field>
+	 	 	</record>
+	 	 	<record id="987212231" model="upopet.veterinario"> 
+	 	 	 	<field name="numColegiado">987212231</field> 
+	 	 	 	<field name="especialidad">cirugía general</field>
+	 	 	 	<field name="nomina">2.850,20</field>
+	 	 	</record>
+<!-- Medicamentos -->
+	 	 	<record id="Hyaloral" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Hyaloral</field> 
+	 	 	 	<field name="referencia">98745634221</field>
+	 	 	 	<field name="precio">49,49</field>
+	 	 	 	<field name="fechaCaducidad">23/03</field>
+	 	 	 	<field name="prospecto">Razas Grandes 120 comprimidos</field>
+	 	 	</record>
+	 	 	<record id="Stangest Anima Strath" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Stangest Anima Strath</field> 
+	 	 	 	<field name="referencia"></field>
+	 	 	 	<field name="precio">10,94</field>
+	 	 	 	<field name="fechaCaducidad">21/09/2027</field>
+	 	 	 	<field name="prospecto">Suplemento Fortificante 100ml</field>
+	 	 	</record>	 	 	
+	 	 	<record id="Vetericyn Plus spray" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Vetericyn Plus spray</field> 
+	 	 	 	<field name="referencia"></field>
+	 	 	 	<field name="precio">9,29</field>
+	 	 	 	<field name="fechaCaducidad">29/12/2022</field>
+	 	 	 	<field name="prospecto">Desinfectante para mascotas 89 ml</field>
+	 	 	</record>	 	 	
+	 	 	<record id="Condroprotector Plus" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Condroprotector Plus</field> 
+	 	 	 	<field name="referencia"></field>
+	 	 	 	<field name="precio">39,99</field>
+	 	 	 	<field name="fechaCaducidad">01/01/2021</field>
+	 	 	 	<field name="prospecto">150 comprimidos Barakaldo</field>
+	 	 	</record>	 	 	
+	 	 	<record id="Flevox Gatos" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Flevox Gatos</field> 
+	 	 	 	<field name="referencia"></field>
+	 	 	 	<field name="precio">80,94</field>
+	 	 	 	<field name="fechaCaducidad">04/07/2020</field>
+	 	 	 	<field name="prospecto">Antiparasitario externo 36 pipetas</field>
+	 	 	</record>	 	 	
+	 	 	<record id="Foran Muscle Max" model="upopet.medicamento"> 
+	 	 	 	<field name="nombre">Foran Muscle Max</field> 
+	 	 	 	<field name="referencia"></field>
+	 	 	 	<field name="precio">28,55</field>
+	 	 	 	<field name="fechaCaducidad">18/02/2026</field>
+	 	 	 	<field name="prospecto">Suplemento que mejora el desarrollo muscular en caballos 1L</field>
+	 	 	</record>
+<!-- Laboratorios -->
+ 	 	 	<record id="A28456820" model="upopet.laboratorio"> 
+ 	 	 		<field name="cif">A28456820</field> 
+	 	 	 	<field name="nombre">Laboratorios Normon SA</field> 
+	 	 	 	<field name="direccion">Ronda de Valdecarrizo, 6</field>
+	 	 	 	<field name="cp">28760</field>
+	 	 	 	<field name="telefono">918065240</field>
+	 	 	</record> 
+	 	 	<record id="B85288785" model="upopet.laboratorio"> 
+ 	 	 		<field name="cif">B85288785</field> 
+	 	 	 	<field name="nombre">Compharma SL</field> 
+	 	 	 	<field name="direccion">Calle Centro Comercial, S/N</field>
+	 	 	 	<field name="cp">28770</field>
+	 	 	 	<field name="telefono">918438788</field>
+	 	 	</record> 
+ 
+ 	 	 
+	 	</data> 
+</odoo> 
