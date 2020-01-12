@@ -28,7 +28,7 @@ class mascota(models.Model):
     persona_id = fields.Many2one('upopet.persona', string='Persona')
     
     
-    
+    #Validación edad: No puede ser negativa
     @api.constrains('edad')
     def _check_edad(self):       
         if (self.edad <= 0):
