@@ -18,6 +18,8 @@ class veterinario(models.Model):
     tratamiento_ids = fields.One2many('upopet.tratamiento', 'veterinario_id', string='Tratamiento')
     cita_ids = fields.One2many('upopet.cita', 'veterinario_id', string='Cita')
     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'veterinario_id', string='Prueba Médica')
+    
+    _sql_constraints = [('veterinario_numColegiado_unique','UNIQUE (numColegiado)','El numero de colegiado debe ser único')]
 
     #Validación número de colegiado: tiene 9 dígitos
     @api.one 
