@@ -19,9 +19,7 @@ class persona(models.Model):
     mascota_ids = fields.One2many('upopet.mascota', 'persona_id', string='Mascota')
 
 
-    #Validación dni: tiene 8 letras y 1 una letra al final
-
-    #Validación gmail: tiene que tener un formato en concreto 
+    #Validacion mail: 
     @api.one 
     @api.constrains('email')
     def _check_email(self):
