@@ -27,6 +27,24 @@ class mascota(models.Model):
     pruebamedica_ids = fields.One2many('upopet.pruebamedica', 'mascota_id', string='Prueba Médica')
     persona_id = fields.Many2one('upopet.persona', string='Persona')
     
+    
+    
+    @api.constrains('edad')
+    def _check_edad(self):       
+        if (self.edad <= 0):
+            raise models.ValidationError('La edad no puede ser negativa')
+    
+    @api.onchange('numChip')
+    def onchange_numChip(self):
+        if (self.persona_id != False and self.nombre != False):
+            chip = self.persona_id.dni
+            id = self.nombre
+            chip = str(chip) + "-" + str(id)
+            self.numChip = chip
+            #raise models.ValidationError(chip)
+
+    
+    
     @api.one
     def compute_mascota_log(self):
       self.mascotaID = self.id

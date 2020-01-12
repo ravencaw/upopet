@@ -18,6 +18,7 @@ class persona(models.Model):
 
     mascota_ids = fields.One2many('upopet.mascota', 'persona_id', string='Mascota')
 
+    _sql_constraints = [('persona_dni_unique','UNIQUE (dni)','El DNI debe ser único')]
 
     #Validacion mail: 
     @api.one 
