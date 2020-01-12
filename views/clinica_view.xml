@@ -33,8 +33,9 @@
 								<group>
 									<field name="cita_ids" nolabel="1">
 										<tree>
-											<field name="fechaHora" />
-											<field name="estado" />
+											<field name="fechaHoraInicio" />
+											<field name="fechaHoraFin" />
+											<field name="state" />
 										</tree>
 									</field>
 								</group>
@@ -58,8 +59,7 @@
 				</tree>
 			</field>
 		</record>
-
-
+		
 		<record id="act_clinica" model="ir.actions.act_window">
 			<field name="name">Clínica</field>
 			<field name="res_model">upopet.clinica</field>

@@ -29,8 +29,9 @@
 								<group>
 									<field name="cita_ids" nolabel="1">
 										<tree>
-											<field name="fechaHora" />
-											<field name="estado" />
+											<field name="fechaHoraInicio" />
+											<field name="fechaHoraFin" />
+											<field name="state" />
 										</tree>
 									</field>
 								</group>

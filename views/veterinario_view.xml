@@ -31,8 +31,9 @@
 						<group colspan="4">
 							<field name="cita_ids">
 								<tree>
-									<field name="fechaHora" />
-									<field name="estado" />
+									<field name="fechaHoraInicio" />
+									<field name="fechaHoraFin" />
+									<field name="state" />
 								</tree>
 							</field>
 						</group>
