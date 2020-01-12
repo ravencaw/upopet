@@ -71,7 +71,7 @@
 	 	 	
 <!-- Mascotas -->
 	 	 	<record id="mascota1" model="upopet.mascota"> 
-	 	 	 	<field name="numChip">45634216V</field> 
+	 	 	 	<field name="numChip">45634216V-Miley</field> 
 	 	 	 	<field name="nombre">Miley</field>
 	 	 	 	<field name="especie">Perro</field>
 	 	 	 	<field name="raza">Labrador</field>
@@ -82,7 +82,7 @@
 	 	 	 	<field name="sexo">h</field> 
 	 	 	</record> 
 	 	 	<record id="mascota2" model="upopet.mascota"> 
-	 	 	 	<field name="numChip">34543678V</field> 
+	 	 	 	<field name="numChip">34543678V-Tanos</field> 
 	 	 	 	<field name="nombre">Tanos</field>
 	 	 	 	<field name="especie">Perro</field>
 	 	 	 	<field name="raza">Bodeguero</field>
@@ -93,7 +93,7 @@
 	 	 	 	<field name="sexo">m</field>
 	 	 	</record> 
 	 	 	<record id="mascota3" model="upopet.mascota"> 
-	 	 	 	<field name="numChip">47658970M</field> 
+	 	 	 	<field name="numChip">47658970M-Mina</field> 
 	 	 	 	<field name="nombre">Mina</field>
 	 	 	 	<field name="especie">Gato</field>
 	 	 	 	<field name="raza">Persa</field>
@@ -104,7 +104,7 @@
 	 	 	 	<field name="sexo">h</field> 
 	 	 	</record> 
 	 	 	<record id="mascota4" model="upopet.mascota"> 
-	 	 	 	<field name="numChip">34543678V</field> 
+	 	 	 	<field name="numChip">34543678V-Tornado</field> 
 	 	 	 	<field name="nombre">Tornado</field>
 	 	 	 	<field name="especie">Caballo</field>
 	 	 	 	<field name="raza">Purasangre</field>
